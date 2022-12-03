@@ -1,0 +1,45 @@
+.footerCon {
+    background-color: black;
+    display: grid;
+    color:white;
+    font-family: 'Great Vibes', cursive;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "subtitle subtitle subtitle"
+                         "leftCol middleCol rightCol";
+}
+
+.subtitle {
+    grid-area: subtitle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+}
+
+.footerLeftCol {
+    grid-area: leftCol;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:4rem;
+    align-items: center;
+    font-family: "Akaya Telivigala", cursive;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: "Akaya Telivigala", cursive;
+    font-size: 1rem;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column  ;
+}

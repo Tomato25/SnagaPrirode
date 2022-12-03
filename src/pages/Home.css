@@ -1,4 +1,9 @@
+.background {
+    background-color: white;
+
+}
 .wrapper {
+    margin: 0 auto;
     height: 100vh;
     width: 100%;
     overflow-y: hidden;
@@ -8,6 +13,9 @@
     align-items: center;
     background-image: url("../images/background.jpg");
     background-position: 50% 40%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .content {
@@ -18,3 +26,9 @@
     height: 100%;
     width: 100%;
 }
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        width: 1440px;
+    }
+  }

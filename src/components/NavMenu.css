@@ -1,0 +1,23 @@
+.nav-links {
+    text-decoration: none;
+    color: white;
+    font-family: "Akaya Telivigala", cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: "Akaya Telivigala", cursive;
+    margin: 3rem;
+    
+}
+
+.nav-link.active {
+    text-decoration:underline;
+    font-family: "Akaya Telivigala", cursive;  
+}
