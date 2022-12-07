@@ -4,7 +4,10 @@ import { NavLink } from 'react-router-dom'
 
 function Footer() {
   return (
+    <div className='footerWrap'>
+
     <div className='footerCon'>
+
         <div className='subtitle'>
             <h1>"Život u skladu s prirodom"</h1>
         </div>
@@ -33,6 +36,7 @@ function Footer() {
       </NavLink>
             </div>
         </div>
+    </div>
     </div>
   )
 }

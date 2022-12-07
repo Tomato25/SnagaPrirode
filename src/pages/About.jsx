@@ -6,8 +6,10 @@ import Bg1 from "../images/about.jpg";
 
 function About() {
   return (
+    <div>
     <Wrap>
       <div className="leftCol">
+
         <div className="aboutText">
           Smješteni smo u dubokoj šumi brdovitog dijela Slavonije, na prelijepom
           dijelu Psunja, u malome selu Gornja Šumetlica. Točna koordinata je:
@@ -26,26 +28,27 @@ function About() {
           duhovno zdravlje čovjeka, te temelj za radostan život. Svojim
           primjerom želimo motivirati sve, a naročito mlade, da se okrenu svojim
           korijenima, da se vrate prirodi i da zajedno stvorimo bolji, zdraviji
-          i veseliji svijet :){" "}
+          i veseliji svijet :)
         </div>
-      </div>
-      <img src={Logo} className="centerLogo" />
+        </div>
+
+
       <div className="rightCol">
+        <img src={Logo} className="centerLogo" />
         <img src={Bg1} className="bgimg"></img>
       </div>
     </Wrap>
-  );
+
+    </div>);
 }
 
 export default About;
 
 const Wrap = styled.div`
-
-  margin-top: 7vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   font-family: "Akaya Telivigala", cursive;
-  height:93vh;
+  height: auto;
 `;

@@ -15,11 +15,12 @@ function NavBar() {
 
   return (
     <Bar>
-      <div className="menuContainer">   
+      <div className="logoContainer">   
         <svg
-         width="50"
-         height="50"
-         fill="white"
+      
+         width="40"
+         height="40"
+         fill="black"
           id="Layer_1"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -71,19 +72,19 @@ function NavBar() {
             />
           </g>
         </svg>
-        <MenuText><NavLink activeClassName="link-active" to="/">Snaga prirode</NavLink></MenuText>
+        <NavLink to="/"><p className="menuLink">Snaga prirode</p ></NavLink>
       </div>
       
       {!toggle && <div onClick={() => toggler(toggle)} className="menuContainer">
-        <MenuText>Izbornik</MenuText>
+        <p className="menuLink">Izbornik</p >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-menu-2"
-          width="40"
-          height="40"
+          width="35"
+          height="35"
           viewBox="0 0 24 24"
           stroke-width="1.5"
-          stroke="#ffffff"
+          stroke="black"
           fill="none"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -95,6 +96,24 @@ function NavBar() {
         </svg>
       </div>}
       {toggle && <NavMenu />}
+      {toggle && <svg
+          onClick={() => toggler(toggle)}
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-menu-2"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="black"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>}
     </Bar>
 
   );
@@ -103,26 +122,17 @@ function NavBar() {
 export default NavBar;
 
 const Bar = styled.div`
-  background-color: black;
-  width:100%;
+  background-color: white;
+  width:80%;
   height: 8vh;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: black;
   padding: 1rem;
   font-size:1.4rem;
-  position:fixed;
-  top:0;
+  border-bottom: 1px solid black;
   box-sizing: border-box;
-
-`;
-
-const MenuText = styled.p`
-  color: white;
-  font-family: "Akaya Telivigala", cursive;
-  text-shadow: 5px 5px 10px #00000081;
-
 `;

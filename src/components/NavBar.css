@@ -1,10 +1,21 @@
-.menuContainer {
+.logoContainer {
     display: flex;
     justify-items: flex-start;
     flex-direction: row;
     align-items: center;
     gap:1rem;
     margin-right: 2rem;
+    
+}
+
+.menuContainer {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+    margin-left: 2rem;
+    
 }
 
 .togglerCon {
@@ -15,3 +26,24 @@ align-items: center;
 gap:1rem;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-family: "Akaya Telivigala", cursive;
+    margin: 0.5rem;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: black;
+    font-family: "Akaya Telivigala", cursive;
+}
+
+.menuLink:hover {
+    text-shadow: 2px 2px 5px rgba(71, 71, 71, 0.397);
+}

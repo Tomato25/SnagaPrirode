@@ -1,12 +1,15 @@
 .footerCon {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: grid;
-    color:white;
+    color:black;
     font-family: 'Great Vibes', cursive;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 0.5fr 1fr;
     grid-template-areas: "subtitle subtitle subtitle"
                          "leftCol middleCol rightCol";
+    width: 80%;   
+    border-top:  1px solid black;
+    margin: 1rem auto 0 auto;
 }
 
 .subtitle {
@@ -17,6 +20,15 @@
     margin-top: 2rem;
     letter-spacing: 5px;
     font-size: 0.8rem;
+}
+
+.footerWrap{
+    width: 100%;
+}
+.dividerBottom {
+    color: black;
+    width: 70%;
+    
 }
 
 .footerLeftCol {

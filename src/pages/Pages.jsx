@@ -12,11 +12,10 @@ import {MenuProvider} from "../context/MenuContext";
 
 function Pages() {
   return (
-    <div >
-      
+
+      <div className="wrap">
       <BrowserRouter >
       <MenuProvider><NavBar /></MenuProvider>
-      <div className="wrap">
         <Routes >
            <Route path=""  exact element={<Home />} />
             <Route path="/products"   element={<Products />} />
@@ -25,10 +24,9 @@ function Pages() {
             <Route path="/gallery"  element={<Gallery />} />
 
         </Routes>
-        </div>
         <Footer />
-      </BrowserRouter>
-    </div>
+              </BrowserRouter>
+      </div>
   );
 }
 
