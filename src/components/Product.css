@@ -1,0 +1,40 @@
+
+  .product {
+    margin: 0 auto;
+    width:80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+  }
+
+  .productTitle {
+    text-align: center;
+    font-family: "Akaya Telivigala", cursive;
+    font-size: 3rem;
+  }
+
+  .productCoursel {
+    width: 90%;
+    height: 350px;
+    background-color: blueviolet;
+  }
+
+  .productDescription {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    margin: 1.5rem;
+    color:rgb(27, 27, 27);
+    font-family: "Akaya Telivigala", cursive;
+
+  }
+
+.productImage {
+    height: 300px;
+    width: auto;
+}

@@ -1,0 +1,74 @@
+
+.contactRightCol {
+    width: 35%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap:4rem;
+    overflow-y:hidden;
+  
+  }
+  
+  .pageName {
+    margin: 2.5rem;
+    font-size: 2.5rem;
+  }
+  
+  .contactText {
+    text-align: left;
+    max-width: 70%;
+    line-height: 2rem;
+    font-size: 1.7rem;
+    margin: 0.5rem;
+    color:rgb(27, 27, 27);
+  }
+  
+  .contactLeftCol {
+    width: 65%;
+    height:92vh;
+    display: flex;
+    align-items:center;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+  }
+  
+  .bgimg {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 6px 9px 9px;
+  }
+  
+  .contactCenterLogo {
+    width: 20rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    /* bring your own prefixes */
+    transform: translate(50%,  -50%);
+  
+  }
+
+  .contactCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contactIconWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  hr {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0));
+    background-color: white;
+    padding: 0;
+  }

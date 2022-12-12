@@ -35,7 +35,7 @@ function About() {
 
       <div className="rightCol">
         <img src={Logo} className="centerLogo" />
-        <img src={Bg1} className="bgimg"></img>
+        <img src={require("../images/about.jpg" )} className="bgimg" />
       </div>
     </Wrap>
 

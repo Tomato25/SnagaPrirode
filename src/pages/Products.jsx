@@ -4,6 +4,7 @@ import Logo from "../images/Logo.png";
 import styled from "styled-components";
 import Bg2 from "../images/products.jpg";
 import { NavLink } from "react-router-dom";
+import Product from "../components/Product";
 
 function Products() {
   return (
@@ -31,11 +32,6 @@ function Products() {
             Nadamo se da ćete uživati u okusima, mirisima i blagodatima koje
             pruža naše voće!{" "}
           </div>
-          <div className="product">
-            <p className="subtitle">Jabuke</p>
-            <div className="productCoursel"></div>
-            <div className="productDescriptiom"></div>
-          </div>
         </div>
 
         <div className="gallery">
@@ -43,6 +39,7 @@ function Products() {
           <img src={Bg2} className="bgimg"></img>
         </div>
       </Wrap>
+      <Product />
     </div>
   );
 }
