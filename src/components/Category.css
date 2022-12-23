@@ -1,0 +1,39 @@
+.categoryWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Akaya Telivigala", cursive;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.description {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y:hidden;  
+  }
+
+  
+  .gallery {
+    width: 50%;
+    height:92vh;
+    display: flex;
+    align-items:center;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+  }
+
+  
+.categoryText {
+  text-align: left;
+  max-width: 80%;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  margin: 1.5rem;
+  color:rgb(27, 27, 27);
+}

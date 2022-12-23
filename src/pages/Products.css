@@ -1,37 +1,33 @@
-.subtitle-link {
-    border-bottom: 1px solid black;
-    align-self: flex-start;
-    font-size: 1.3rem;
-    text-decoration: none;
-    color:black;
-}
-
-.subtitle-link p {
-    margin: 4px;
-}
-
-.subtitlesCon{
-    
-    width: 70%;
-}
-
-.description {
-    width: 50%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y:hidden;
-  
-  }
-
-  
-  .gallery {
-    width: 50%;
-    height:92vh;
+.productsDecoration {
     display: flex;
     align-items:center;
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
-  }
+    height:25vw;
+    width: 100%;
+    position: relative;
+}
+
+.productsWrap {
+    width: 80%;
+}
+
+.products-nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products-nav-link {
+    text-decoration: none;
+    color: black;
+    font-family: "Akaya Telivigala", cursive;
+    margin: 5rem 0 5rem 0;
+    font-size: 1.5rem;
+
+    
+}
+
+.products-nav-link.active {
+    text-decoration:underline;
+}

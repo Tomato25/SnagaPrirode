@@ -1,5 +1,5 @@
 import {React, useContext} from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import "./NavBar.css";
 import "./NavMenu"
@@ -9,11 +9,16 @@ import MenuContext from "../context/MenuContext.jsx";
 
 function NavBar() {
 
+  const location = useLocation();
+
+  console.log(location.pathname);
+
   const {toggle} = useContext(MenuContext);
   const {toggler} = useContext(MenuContext);
 
-
-  return (
+  return (   
+    <div className="navWrap">
+      {location.pathname !== "/" &&
     <Bar>
       <div className="logoContainer">   
         <svg
@@ -115,7 +120,8 @@ function NavBar() {
           <line x1="4" y1="18" x2="20" y2="18" />
         </svg>}
     </Bar>
-
+    }
+    </div>
   );
 }
 

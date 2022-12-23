@@ -1,0 +1,77 @@
+
+  .product {
+    margin: 0 auto;
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    border-bottom: 2px solid black;
+  }
+
+  .productTitle {
+    text-align: center;
+    font-family: "Akaya Telivigala", cursive;
+    font-size: 3rem;
+  }
+
+  .productCoursel {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 5rem 2rem 5rem;
+  }
+
+  .card  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    width: 25%;
+
+  }
+
+  .productDescription {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    margin: 1.5rem;
+    color:rgb(27, 27, 27);
+    font-family: "Akaya Telivigala", cursive;
+
+  }
+
+.productImage {
+    height: auto;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 6px 9px 9px;
+
+
+}
+
+.splide__pagination__page {
+  border-radius: 0 !important;
+  width:80px !important;
+}
+
+.splide__pagination__page {
+  border-radius: 0 !important;
+  width:60px !important;
+  height: 5px !important;
+}
+
+.splide__pagination__page.is-active {
+  background: black !important;
+  opacity: 1  !important;
+  transform: scale(1.2)  !important;
+}
+
+.splide__pagination {
+  gap:0.5rem
+}

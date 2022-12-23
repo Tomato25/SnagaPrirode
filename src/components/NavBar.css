@@ -18,6 +18,10 @@
     
 }
 
+.navWrap {
+    width: 100%;
+}
+
 .togglerCon {
 display: flex;
 justify-items: flex-start;
