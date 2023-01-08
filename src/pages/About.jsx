@@ -1,15 +1,12 @@
 import React from "react";
 import "./About.css";
 import Logo from "../images/Logo.png";
-import styled from "styled-components";
-import Bg1 from "../images/about.jpg";
 
 function About() {
   return (
     <div>
-    <Wrap>
+    <div className="aboutWrap">
       <div className="leftCol">
-
         <div className="aboutText">
           Smješteni smo u dubokoj šumi brdovitog dijela Slavonije, na prelijepom
           dijelu Psunja, u malome selu Gornja Šumetlica. Točna koordinata je:
@@ -37,18 +34,10 @@ function About() {
         <img src={Logo} className="centerLogo" />
         <img src={require("../images/about.jpg" )} className="bgimg" />
       </div>
-    </Wrap>
+    </div>
 
     </div>);
 }
 
 export default About;
 
-const Wrap = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  font-family: "Akaya Telivigala", cursive;
-  height: auto;
-`;

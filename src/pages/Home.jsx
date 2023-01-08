@@ -11,7 +11,7 @@ function Home() {
       <div className="middleTitle">
         <MainTitle />
       </div>
-      <div className="leftTop">
+      <div className="imgCon">
         <img src={require("../images/background.jpg")} className="bgimages" />
         <img src={Logo} className="homeLogo" />
       </div>

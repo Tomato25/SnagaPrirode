@@ -1,3 +1,19 @@
+.bar {
+    background-color: white;
+    width:80%;
+    height: 8vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 1rem;
+    font-size:1.4rem;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
 .logoContainer {
     display: flex;
     justify-items: flex-start;
@@ -50,4 +66,13 @@ a {
 
 .menuLink:hover {
     text-shadow: 2px 2px 5px rgba(71, 71, 71, 0.397);
+}
+
+
+@media (max-width: 1100px) {
+.bar {
+    width: 90%;
+    font-size: 1.2rem;
+}
+
 }

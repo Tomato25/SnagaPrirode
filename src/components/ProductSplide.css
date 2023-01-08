@@ -1,0 +1,63 @@
+.productCoursel {
+    max-width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    align-self: flex-start;
+
+  }
+
+
+  .card  {
+    height: 27rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 2rem;
+
+  }
+
+  
+.productImage {
+    max-height: 25rem;
+    width: 20rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 6px 9px 9px;
+
+}
+
+.splide:not(.is-overflow) .splide__pagination {
+    display: flex;
+}
+
+.splide__pagination__page {
+  border-radius: 0 !important;
+  width:80px !important;
+}
+
+.splide__pagination__page {
+  border-radius: 2px !important;
+  width:60px !important;
+  height: 5px !important;
+}
+
+.splide__pagination__page.is-active {
+  background: black !important;
+  opacity: 1  !important;
+  transform: scale(1.2)  !important;
+}
+
+.splide__pagination {
+  gap:0.5rem
+}
+
+@media (max-width: 1100px) {
+  .productCoursel {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+
+}

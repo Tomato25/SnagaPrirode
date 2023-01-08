@@ -1,0 +1,33 @@
+
+  
+.benefitsAccordion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    line-height: 1rem;
+      font-size: 1.3rem;
+      color:rgb(27, 27, 27);
+      font-family: "Akaya Telivigala", cursive;
+    margin-left: 1.5rem;
+  }
+  
+  .benefitsAccordionTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .benefitsAccordionContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  
+  

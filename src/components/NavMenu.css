@@ -4,19 +4,44 @@
     font-family: "Akaya Telivigala", cursive;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
 }
 
 .nav-link {
     text-decoration: none;
     color: black;
     font-family: "Akaya Telivigala", cursive;
-    margin: 3rem;
+    
     
 }
 
 .nav-link.active {
     text-decoration:underline;
     font-family: "Akaya Telivigala", cursive;  
+}
+
+@media (max-width: 1100px) {
+    .nav-links {
+        gap: 2rem;
+        font-size: 1rem;
+        white-space: nowrap;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.8rem;
+        white-space: nowrap;
+
+    }
+
 }

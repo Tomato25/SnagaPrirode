@@ -5,10 +5,6 @@ import MenuContext from "../context/MenuContext.jsx";
 
 function NavMenu() {
 
-  const {toggle} = useContext(MenuContext);
-  const {toggler} = useContext(MenuContext);
-
-
   return (
     <div className="nav-links">
       <NavLink to="/" className="nav-link" activeClassName="nav-link-active">

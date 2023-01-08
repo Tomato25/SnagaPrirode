@@ -10,6 +10,7 @@ import NavBar from "../components/NavBar";
 import './Pages.css';
 import Footer from "../components/Footer";
 import {MenuProvider} from "../context/MenuContext";
+import { ScreenSizeProvider } from "../context/ScreenSizeContext";
 
 
 
@@ -17,6 +18,7 @@ function Pages() {
   return (
       <div className="wrap">
       <BrowserRouter >
+      <ScreenSizeProvider>
       <MenuProvider>
         <NavBar />
         <Routes >
@@ -28,6 +30,7 @@ function Pages() {
             <Route path="/gallery"  element={<Gallery />} />
         </Routes>
         </MenuProvider>
+        </ScreenSizeProvider>
         <Footer />
               </BrowserRouter>
       </div>

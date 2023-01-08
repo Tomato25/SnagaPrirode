@@ -5,11 +5,11 @@ import styled from "styled-components";
 
 function Contact() {
   return (
-    <div>
-      <Wrap>
+      <div className="contactWrap">
         <div className="contactLeftCol">
-          <img src={Logo} className="contactCenterLogo" />
           <img src={require("../images/contact.jpg")} className="bgimg" />
+          <img src={Logo} className="contactCenterLogo" />
+
         </div>
         <div className="contactRightCol">
           <div className="contactCon">
@@ -85,19 +85,9 @@ function Contact() {
             <div className="contactText">Instagram</div>
           </div><div className="contactText">opg_snaga_prirode</div></div>
         </div>
-      </Wrap>
-    </div>
+      </div>
   );
 }
 
 export default Contact;
 
-const Wrap = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100vw;
-  font-family: "Akaya Telivigala", cursive;
-  height: auto;
-`;

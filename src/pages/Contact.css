@@ -1,74 +1,126 @@
+.contactWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  font-family: "Akaya Telivigala", cursive;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+
+}
 
 .contactRightCol {
-    width: 35%;
-    background-color: white;
-    display: flex;
+  width: 35%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  overflow-y: hidden;
+}
+
+.pageName {
+  margin: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.contactText {
+  text-align: left;
+  max-width: 70%;
+  line-height: 2rem;
+  font-size: 1.7rem;
+  margin: 0.5rem;
+  color: rgb(27, 27, 27);
+}
+
+.contactLeftCol {
+  width: 65%;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bgimg {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 6px 9px 9px;
+}
+
+.contactCenterLogo {
+  width: 20rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  /* bring your own prefixes */
+  transform: translate(50%, -50%);
+}
+
+.contactCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.contactIconWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.781),
+    rgba(0, 0, 0, 0)
+  );
+  background-color: white;
+  padding: 0;
+}
+
+@media (max-width: 1100px) {
+  .contactWrap {
+    width: 100vw;
+    height: max-content;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap:4rem;
-    overflow-y:hidden;
-  
-  }
-  
-  .pageName {
-    margin: 2.5rem;
-    font-size: 2.5rem;
-  }
-  
-  .contactText {
-    text-align: left;
-    max-width: 70%;
-    line-height: 2rem;
-    font-size: 1.7rem;
-    margin: 0.5rem;
-    color:rgb(27, 27, 27);
-  }
-  
+    gap:5rem;
+    overflow-x: hidden;
+    margin:0 auto;
+}
+
   .contactLeftCol {
-    width: 65%;
-    height:92vh;
-    display: flex;
-    align-items:center;
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
+    width: 95%;
+    margin: 0 auto;
+    height: 40vh;
   }
-  
+
   .bgimg {
-    height: 90%;
-    width: 100%;
-    object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 6px 9px 9px;
+    margin-top: 2rem;
+    height: 100%;
   }
-  
+
+
   .contactCenterLogo {
     width: 20rem;
     position: absolute;
-    top: 50%;
-    right: 0;
+    top:auto;
+    right: auto;
+    bottom: 0;
+    left: 50%;
     /* bring your own prefixes */
-    transform: translate(50%,  -50%);
-  
+    transform: translate(-50%, 50%);
   }
 
-  .contactCon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  .contactRightCol {
     width: 100%;
+    gap:3rem;
   }
-
-  .contactIconWrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  hr {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0));
-    background-color: white;
-    padding: 0;
-  }
+}

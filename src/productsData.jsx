@@ -41,9 +41,11 @@ const productsData = [
           { src: "jabuka3" },
           { src: "jabuka4" },
         ],
+        ingredients: [],
+        benefits: [],
       },
       {
-        id: "1",
+        id: "2",
         name: "Kruške",
         description: [
           {
@@ -63,9 +65,12 @@ const productsData = [
           { src: "kruska4" },
           { src: "kruska5" },
         ],
+        ingredients: [],
+
+        benefits: [],
       },
       {
-        id: "1",
+        id: "3",
         name: "Breskve",
         description: [
           {
@@ -79,9 +84,12 @@ const productsData = [
         ],
         imageFolder: "Breskve",
         images: [{ src: "breskva1" }],
+        ingredients: [],
+
+        benefits: [],
       },
       {
-        id: "1",
+        id: "4",
         name: "Orasi",
         description: [
           {
@@ -94,6 +102,9 @@ const productsData = [
         ],
         imageFolder: "Orasi",
         images: [{ src: "orasi1" }, { src: "orasi2" }],
+        ingredients: [],
+
+        benefits: [],
       },
     ],
   },
@@ -128,12 +139,23 @@ const productsData = [
               "Jabuke koje će vas podsjetiti na djetinjstvo, bogate okusom i mirisom!",
           },
         ],
+        imageFolder: "Kaktusi",
         images: [
-          { src: "jabuka1" },
-          { src: "jabuka2" },
-          { src: "jabuka3" },
-          { src: "jabuka4" },
+          { src: "kaktus1" },
+          { src: "kaktus2" },
+          { src: "kaktus3" },
+          { src: "kaktus4" },
+          { src: "kaktus5" },
+          { src: "kaktus6" },
+          { src: "kaktus7" },
+          { src: "kaktus8" },
+          { src: "kaktus9" },
+          { src: "kaktus10" },
+          { src: "kaktus11" },
         ],
+        ingredients: [],
+
+        benefits: [],
       },
       {
         id: "2",
@@ -148,13 +170,29 @@ const productsData = [
               "Imamo kruške koje su izvrsne za jesti direktno sa stabla, one koje su odlične za preradu (izradu pekmeza),  te naravno kruške za rakiju i za kiseljenje.",
           },
         ],
+        imageFolder: "Sukulenti",
+
         images: [
-          { src: "kruska1" },
-          { src: "kruska2" },
-          { src: "kruska3" },
-          { src: "kruska4" },
-          { src: "kruska5" },
+          { src: "sukulent1" },
+          { src: "sukulent2" },
+          { src: "sukulent3" },
+          { src: "sukulent4" },
+          { src: "sukulent5" },
+          { src: "sukulent6" },
+          { src: "sukulent7" },
+          { src: "sukulent8" },
+          { src: "sukulent9" },
+          { src: "sukulent10" },
+          { src: "sukulent11" },
+          { src: "sukulent12" },
+          { src: "sukulent13" },
+          { src: "sukulent14" },
+          { src: "sukulent15" },
+          { src: "sukulent16" },
         ],
+        ingredients: [],
+
+        benefits: [],
       },
       {
         id: "3",
@@ -168,7 +206,12 @@ const productsData = [
             paragraph: "Sirovi orašasti plodovi su melem za tijelo!",
           },
         ],
-        images: [{ src: "orasi1" }, { src: "orasi2" }],
+        imageFolder: "Ruzmarin",
+
+        images: [{ src: "ruzmarin1" }, { src: "ruzmarin2" }],
+        ingredients: [],
+
+        benefits: [],
       },
       {
         id: "4",
@@ -182,7 +225,11 @@ const productsData = [
             paragraph: "Sirovi orašasti plodovi su melem za tijelo!",
           },
         ],
-        images: [{ src: "orasi1" }, { src: "orasi2" }],
+        imageFolder: "Lavanda",
+        images: [{ src: "lavanda1" }],
+        ingredients: [],
+
+        benefits: [],
       },
     ],
   },
@@ -209,59 +256,13 @@ const productsData = [
     categoryImage: "voce",
     products: [
       {
-        id: "1",
-        name: "Jabuke",
-        description: [
-          {
-            paragraph:
-              "Imamo veliki izbor jabuka, za svačiji ukus. Trenutno posađeno 20ak vrsta koje sazrijevaju od srpnja pa skroz do kraja studenog. Od malih do ogromnih, kiselih do slatkih, svih boja i oblika.",
-          },
-          {
-            paragraph:
-              "Jabuke koje će vas podsjetiti na djetinjstvo, bogate okusom i mirisom!",
-          },
-        ],
-        images: [
-          { src: "jabuka1" },
-          { src: "jabuka2" },
-          { src: "jabuka3" },
-          { src: "jabuka4" },
-        ],
-      },
-      {
-        id: "1",
-        name: "Kruške",
-        description: [
-          {
-            paragraph:
-              "Posađeno desetak vrsta krušaka, koje sazrijevaju od kolovoza do studenog. Svih mogućih boja, okusa i oblika. Vjerujemo da svatko može pronaći i izabrati baš onu koja je za nju/njega!",
-          },
-          {
-            paragraph:
-              "Imamo kruške koje su izvrsne za jesti direktno sa stabla, one koje su odlične za preradu (izradu pekmeza),  te naravno kruške za rakiju i za kiseljenje.",
-          },
-        ],
-        images: [
-          { src: "kruska1" },
-          { src: "kruska2" },
-          { src: "kruska3" },
-          { src: "kruska4" },
-          { src: "kruska5" },
-        ],
-      },
-      {
-        id: "1",
-        name: "Orasi",
-        description: [
-          {
-            paragraph:
-              "Kvalitetni orasi, od srednje veličine do krupnih. Odličnog okusa, dobri za jesti sirovi, kao i za izradu kolača i ostalih slastica. Orah je nevjerojatan izvor vrijednih nutrijenata, sadrži: antioksidanse, željezo, kalcij, magnezij, fosfor, cink, mangan, masne kiseline te vitamine B, E i K.",
-          },
-          {
-            paragraph: "Sirovi orašasti plodovi su melem za tijelo!",
-          },
-        ],
-        images: [{ src: "orasi1" }, { src: "orasi2" }],
+        id: "",
+        name: "",
+        description: [],
+        imageFolder: "",
+        images: [],
+        benefits: [],
+        ingredients: [],
       },
     ],
   },
@@ -273,11 +274,11 @@ const productsData = [
       },
       {
         paragraph:
-          "Ručno izrađujemo vlastite meleme od najkvalitetnijih organskih sastojaka. 100% prirodni, veganski i bez dodataka. U ponudi imamo:",
+          "Ručno izrađujemo vlastite meleme od najkvalitetnijih organskih sastojaka. 100% prirodni, veganski i bez dodataka.",
       },
       {
         paragraph:
-          "Melem Original – naš izvorni melem s kojim je sve krenulo :)\n Melem Extra – namjenjen za najteže slučajeve\nMelem Baby – posebno prilagođen za bebe i djecu\nMelem Gavez – naša veganska verzija gavezove masti",
+          " U ponudi imamo:\nMelem Original – naš izvorni melem s kojim je sve krenulo :)\n Melem Extra – namjenjen za najteže slučajeve\nMelem Baby – posebno prilagođen za bebe i djecu\nMelem Gavez – naša veganska verzija gavezove masti",
       },
       {
         paragraph: "Sve izrađeno sa puno ljubavi!",
@@ -298,61 +299,284 @@ const productsData = [
               "Dubinski njeguje, obnavlja i štiti kožu. Namjenjen je za svakodnevnu uporabu. Može se nanositi na cijelo tijelo i može se koristiti za sve tipove kože.",
           },
           {
-            paragraph: "Sastojci://n-kokosovo ulje//.-maslinovo ulje//n-konopljino ulje   ",
+            paragraph: "Dostupan je u pakiranjima od: 7ml, 30ml i 50ml.",
           },
-          {
-            paragraph:
-              "Naš izvorni recept za melem s kojim je sve krenulo i kojega smo s vremenom usavršili i nazvali ga „Melem original” :)",
-          },
+        ],
+        ingredients: [
+          { ingredient: "konopljino ulje" },
+          { ingredient: "kokosovo ulje" },
+          { ingredient: "maslinovo ulje" },
+          { ingredient: "ružmarinovo ulje" },
+          { ingredient: "ulje bijelog bora" },
+          { ingredient: "pčelinji vosak" },
+        ],
+        benefits: [
+          { benefit: "iritacije kože" },
+          { benefit: "crvenila kože" },
+          { benefit: "hemoroida" },
+          { benefit: "zarastanja rana" },
+          { benefit: "zacjeljivanja ožiljaka" },
+          { benefit: "opekotina" },
+          { benefit: "seboreje" },
+          { benefit: "psorijaze" },
+          { benefit: "neurodermatitisa" },
+          { benefit: "neurodermatitisa" },
+          { benefit: "raznih herpesa" },
+          { benefit: "ožiljaka od alergija" },
+          { benefit: "ugriza kukaca" },
+          { benefit: "još mnogo toga, popis se stalno povećava!" },
         ],
         imageFolder: "Melemi",
         images: [{ src: "melem1" }, { src: "melem2" }],
       },
       {
         id: "2",
-        name: "Sukulenti",
+        name: "Melem Extra",
         description: [
           {
             paragraph:
-              "Posađeno desetak vrsta krušaka, koje sazrijevaju od kolovoza do studenog. Svih mogućih boja, okusa i oblika. Vjerujemo da svatko može pronaći i izabrati baš onu koja je za nju/njega!",
+              "Melem po posebnoj narudžbi, za najteže slučajeve. Namjenjen samo onima kojima je to zaista potrebno!",
+          },
+
+          {
+            paragraph: "Dostupan je u pakiranjima od: 50ml i 100ml.",
           },
           {
             paragraph:
-              "Imamo kruške koje su izvrsne za jesti direktno sa stabla, one koje su odlične za preradu (izradu pekmeza),  te naravno kruške za rakiju i za kiseljenje.",
+              "Za sve dodatne informacije stojimo Vam na raspolaganju!",
           },
         ],
+        ingredients: [
+          { ingredient: "konopljino ulje" },
+          { ingredient: "kokosovo ulje" },
+          { ingredient: "maslinovo ulje" },
+          { ingredient: "ružmarinovo ulje" },
+          { ingredient: "ulje bijelog bora" },
+          { ingredient: "pčelinji vosak" },
+        ],
+        benefits: [],
         imageFolder: "Melemi",
         images: [{ src: "melem3" }, { src: "melem4" }],
       },
       {
         id: "3",
-        name: "Ružmarin",
+        name: "Melem Baby",
         description: [
           {
             paragraph:
-              "Kvalitetni orasi, od srednje veličine do krupnih. Odličnog okusa, dobri za jesti sirovi, kao i za izradu kolača i ostalih slastica. Orah je nevjerojatan izvor vrijednih nutrijenata, sadrži: antioksidanse, željezo, kalcij, magnezij, fosfor, cink, mangan, masne kiseline te vitamine B, E i K.",
+              "Melem koji izrađujemo posebno za naše najmlađe. Prilagođen recept za najosjetljiviju kožu od samo nekoliko posebno izabranih sastojaka. Posebno se lako nanosi na kožu zbog svoje prilagođene strukture.",
           },
           {
-            paragraph: "Sirovi orašasti plodovi su melem za tijelo!",
+            paragraph:
+              "Dubinski njeguje, obnavlja i štiti kožu. Namjenjen je za svakodnevnu uporabu. Može se nanositi na cijelo tijelo i može se koristiti za sve tipove kože.",
+          },
+          {
+            paragraph: "Dostupan je u pakiranjima od: 30ml, 50ml i 100ml.",
           },
         ],
+        ingredients: [
+          { ingredient: "konopljino ulje" },
+          { ingredient: "kokosovo ulje" },
+          { ingredient: "maslinovo ulje" },
+          { ingredient: "pčelinji vosak" },
+        ],
+        benefits: [],
         imageFolder: "Melemi",
         images: [{ src: "melem5" }, { src: "melem6" }],
       },
       {
         id: "4",
-        name: "Lavanda",
+        name: "Melem Gavez",
         description: [
           {
             paragraph:
-              "Kvalitetni orasi, od srednje veličine do krupnih. Odličnog okusa, dobri za jesti sirovi, kao i za izradu kolača i ostalih slastica. Orah je nevjerojatan izvor vrijednih nutrijenata, sadrži: antioksidanse, željezo, kalcij, magnezij, fosfor, cink, mangan, masne kiseline te vitamine B, E i K.",
+              "100 % prirodan gavezov melem u veganskoj izvedbi. Ljekovita svojstva gaveza su poznata još od srednjeg vijeka, a danas su i znanstveno dokazana!",
           },
           {
-            paragraph: "Sirovi orašasti plodovi su melem za tijelo!",
+            paragraph:
+              "Ubrzava rast i obnovu ozlijeđenih kostiju, te ima protuupalno djelovanje.",
           },
+          {
+            paragraph: "Dostupan je u pakiranjima od: 50ml i 100ml.",
+          },
+        ],
+
+        ingredients: [
+          { ingredient: "svježi korijen gaveza" },
+          { ingredient: "kokosovo ulje" },
+          { ingredient: "maslinovo ulje" },
+          { ingredient: "pčelinji vosak" },
+        ],
+        benefits: [
+          { benefit: "uganuća" },
+          { benefit: "udaraca" },
+          { benefit: "nagnječenja tkiva" },
+          { benefit: "bolova u leđima" },
+          { benefit: "istegnuća ligamenata i mišića" },
+          { benefit: "artritisa" },
+          { benefit: "bolova u zglobovima" },
+          { benefit: "prijeloma kostiju" },
+          { benefit: "zarastanja rana" },
+          { benefit: "čireva" },
+          { benefit: "reume" },
         ],
         imageFolder: "Melemi",
         images: [{ src: "melem7" }, { src: "melem8" }],
+      },
+    ],
+  },
+  {
+    category: "Ljekovito bilje i čajevi",
+    categoryDescription: [
+      {
+        paragraph:
+          "“Pijenje šalice čaja dnevno zasigurno će izgladnjeti ljekarne.”",
+      },
+      {
+        paragraph:
+          "U našoj ponudi možete pronaći nekoliko vrsta čajeva, od kojih neke sami beremo, a neke nabavljamo u suradnji sa lokalnim travarima i biljnim ljekarnama.",
+      },
+      {
+        paragraph:
+          "Biljke imaju biološki aktivne spojeve širokog spektra. Kako liječe ljudski organizam, tako mogu liječiti i prostor otpuštanjem određenih aroma. Čaj umiruje um i misli, a tijelo oslobađa tenzija.",
+      },
+      {
+        paragraph:
+          "Ispijanje vruće šalice čaja u bilo koje doba dana ima meditativna svojstva!",
+      },
+      {
+        paragraph: "“Čaj je religija umjetnosti života.”",
+      },
+    ],
+    categoryImage: "ljekovitobilje",
+    products: [
+      {
+        id: "1",
+        name: "Menta",
+        description: [
+          {
+            paragraph:
+              "Čaj od mente, poznat još i kao čaj od nane, je vrlo poznat diljem svijeta već tisućama godina. Menta je višegodišnja biljka koja prirodno raste na područjima Europe i Azije. Metvica spada među čajeve koje bi uvijek trebalo imati kod kuće, jer dobro dođe kod različitih tegoba.",
+          },
+          {
+            paragraph:
+              "Sadrži visoku količinu mentola, koji je po mirisu čini prepoznatljivom među tisućama biljaka. Mentol aktivira receptore osjetljive na hladnoću u koži i sluznici tkiva, zbog čega se javlja osjećaj hlađenja, po kojemu je ova biljka prepoznatljiva. Jedno od primarnih svojstava metvice je ublažavanje stresa. Sadrži veće količine triptofana, od kojeg nastaje serotonin koji podiže raspoloženje.",
+          },
+          {
+            paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
+          },
+        ],
+        benefits: [
+          { benefit: "pomaže kod astme i alergije" },
+          { benefit: "jača imunitet" },
+          { benefit: "suzbija upale i infekcije" },
+          { benefit: "pomaže kod probavnih tegoba" },
+          { benefit: "sprječava bolesti desni i loš zadah" },
+          { benefit: "potpomaže mršavljenju" },
+          { benefit: "ublažava stres i nesanicu" },
+        ],
+        imageFolder: [],
+        images: [],
+      },
+      {
+        id: "2",
+        name: "Kamilica",
+        description: [
+          {
+            paragraph:
+              "Kamilica je dobro poznata biljka i dobar saveznik u borbi protiv različitih zdravstvenih tegoba. Raširena je po cijeloj Europi i Aziji, a raste samoniklo. Cvjetovi kamilice su ljekoviti i skupljaju se preko ljeta.",
+          },
+          {
+            paragraph:
+              "Čaj od kamilice bogat je flavonoidima i seskviterpenima te ostalim antioksidansima koji imaju snažan pozitivan učinak na ljudski organizam.",
+          },
+          {
+            paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
+          },
+        ],
+        benefits: [
+          { benefit: "nesanice" },
+          { benefit: "oslabljenog imuniteta" },
+          { benefit: "uznemirenog želuca" },
+          { benefit: "problema s probavom" },
+          { benefit: "menstrualnih tegoba" },
+          { benefit: "problema s kožom i kosom" },
+        ],
+        imageFolder: [],
+        images: [],
+      },
+      {
+        id: "3",
+        name: "Trava iva",
+        description: [
+          {
+            paragraph: "„Trava iva od mrtva pravi živa.”",
+          },
+          {
+            paragraph:
+              "Trava iva (lat. teucrium montanum) vrlo je ljekovita biljka koja raste u planinskim krajevima diljem svijeta. Koristila se za liječenje još u doba antike. Postoji staro narodno vjerovanje na Balkanu prema kojemu ova trava omogućuje mentalni i fizički oporavak nakon duge bolesti, teške tjelesne ili duševne iscrpljenosti.",
+          },
+          {
+            paragraph:
+              "Iako je manje poznata u široj javnosti, trava iva jedna je od najpouzdanijih ljekovitih biljaka. Jako je cijenjena u planinsko-brdskim krajevima, a kažu da liječi skoro sve teške bolesti!",
+          },
+          {
+            paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
+          },
+        ],
+        benefits: [
+          { benefit: "jača imunitet" },
+          { benefit: "smanjuje upale" },
+          { benefit: "jak je antioksidans" },
+          { benefit: "djeluje protiv bakterija i gljivica" },
+          { benefit: "pomaže kod bolesti želuca" },
+          { benefit: "pomaže kod depresije" },
+          { benefit: "izbacuje višak tekućine iz organizma" },
+          { benefit: "primjenjuje se u liječenju bolesti dišnih organa" },
+          { benefit: "pomaže kod hemeroida i šećerne bolesti" },
+          { benefit: "čisti organizam" },
+        ],
+        imageFolder: [],
+        images: [],
+      },
+      {
+        id: "4",
+        name: "Timijan",
+        description: [
+          {
+            paragraph:
+              "Timijan je jedan od jeftinijih i svakome dostupnih lijekova. Njegove ljekovitost i hranjivost poznate su od davnina. Smatra se da je ova biljka podrijetlom s Mediterana, a danas je rasprostranjena po cijelom svijetu.",
+          },
+          {
+            paragraph:
+              "U njegovom su sastavu između ostalog borneol, karvakrol, timol, saponini, tanin, glikozidi, vitamini A, C, D, B-kompleks, magnezij, fosfor, kalij i cink.",
+          },
+          {
+            paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
+          },
+        ],
+        benefits: [
+          { benefit: "poticanja iskašljavanja" },
+          { benefit: "infekcije i bolesti bubrega" },
+          { benefit: "depresije i neuroloških problema" },
+          { benefit: "tuberkoloze" },
+          { benefit: "bolesti probavnog sustava" },
+          { benefit: "nesanice i migrene" },
+          { benefit: "stimuliranja seksualne želje" },
+          { benefit: "anemije" },
+          { benefit: "antireumatik" },
+          { benefit: "antiseptik" },
+          { benefit: "antikoagulans" },
+          { benefit: "baktericid" },
+          { benefit: "afrodizijak" },
+          { benefit: "tonik" },
+          { benefit: "stimulant" },
+          { benefit: "relaksant" },
+          { benefit: "antiparazitik" },
+          { benefit: "prirodni konzervans i insekticid" },
+        ],
+        imageFolder: [],
+        images: [],
       },
     ],
   },

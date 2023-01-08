@@ -1,0 +1,66 @@
+.galleryCoursel {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+
+  .galleryCard  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 2rem;
+    pointer-events: none;
+
+
+  }
+
+  
+.galleryImage {
+    max-height: 80vh;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 6px 9px 9px;
+    pointer-events: none;
+}
+
+.splide:not(.is-overflow) .splide__pagination {
+    display: flex;
+}
+
+.splide__pagination__page {
+  border-radius: 0 !important;
+  width:80px !important;
+}
+
+.splide__pagination__page {
+  border-radius: 2px !important;
+  width:60px !important;
+  height: 5px !important;
+}
+
+.splide__pagination__page.is-active {
+  background: black !important;
+  opacity: 1  !important;
+  transform: scale(1.2)  !important;
+}
+
+.splide__pagination {
+  gap:0.5rem
+}
+
+.splide__arrow {
+    background: none !important;
+}
+
+.splide__arrow svg {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+
+}

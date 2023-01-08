@@ -1,6 +1,18 @@
+.aboutWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  font-family: "Akaya Telivigala", cursive;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+
+}
 
 .leftCol {
-  width: 35%;
+  width: 50%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -16,7 +28,7 @@
 
 .aboutText {
   text-align: left;
-  max-width: 70%;
+  max-width: 80%;
   line-height: 2rem;
   font-size: 1.3rem;
   margin: 1.5rem;
@@ -24,7 +36,7 @@
 }
 
 .rightCol {
-  width: 65%;
+  width: 50%;
   height:92vh;
   display: flex;
   align-items:center;
@@ -37,6 +49,7 @@
   height: 90%;
   width: 100%;
   object-fit: cover;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 6px 9px 9px;
 }
 
@@ -54,4 +67,45 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0));
   background-color: white;
   padding: 0;
+}
+
+
+
+@media (max-width: 1100px) {
+  .aboutWrap {
+    width: 100vw;
+    height: max-content;
+    flex-direction: column-reverse;
+    gap:5rem;
+    overflow-x: hidden;
+    margin:0 auto;
+}
+
+  .rightCol {
+    width: 95%;
+    margin: 0 auto;
+    height: 40vh;
+  }
+
+  .bgimg {
+    margin-top: 2rem;
+    height: 100%;
+  }
+
+
+  .centerLogo  {
+    width: 20rem;
+    position: absolute;
+    top:auto;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, 50%);
+  }
+
+  .leftCol {
+    width: 100%;
+    gap:1rem;
+  }
 }
