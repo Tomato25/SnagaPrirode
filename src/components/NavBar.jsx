@@ -4,9 +4,9 @@ import styled from "styled-components";
 import "./NavBar.css";
 import "./NavMenu"
 import NavMenu from "./NavMenu";
-import MobileNavMenu from "./MobileNavMenu";
 import MenuContext from "../context/MenuContext.jsx";
 import ScreenSizeContext from "../context/ScreenSizeContext";
+import {motion} from "framer-motion";
 
 
 function NavBar() {
@@ -24,6 +24,7 @@ function NavBar() {
   return (   
     <div className="navWrap">
       {location.pathname !== "/" &&
+    <div>
     <div className="bar">
       <div className="logoContainer">   
         <svg
@@ -143,10 +144,10 @@ function NavBar() {
           <line x1="4" y1="18" x2="20" y2="18" />
         </svg>}
     </div>
-    }
     {toggle && <NavMenu />}
+    </div>
+    }
     
-
     </div>
   );
 }
