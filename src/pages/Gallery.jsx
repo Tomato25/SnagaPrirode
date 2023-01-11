@@ -3,7 +3,8 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./Gallery.css";
 import "@splidejs/react-splide/css";
 import imagesData from "../galleryimages";
-
+import { motion } from 'framer-motion';
+import { imgAnimitem } from '../animations/productAnimations';
 
 function Gallery() {
 
@@ -21,6 +22,8 @@ function Gallery() {
         type: "loop",
         snap: "true"
       }}
+
+      
     >
       {imagesData.map((image, index) => {
         return (

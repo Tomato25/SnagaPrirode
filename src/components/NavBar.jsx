@@ -6,7 +6,7 @@ import "./NavMenu"
 import NavMenu from "./NavMenu";
 import MenuContext from "../context/MenuContext.jsx";
 import ScreenSizeContext from "../context/ScreenSizeContext";
-import {motion} from "framer-motion";
+import {AnimatePresence, motion} from "framer-motion";
 
 
 function NavBar() {
@@ -20,6 +20,8 @@ function NavBar() {
   const {toggler} = useContext(MenuContext);
 
   const {screenSize} = useContext(ScreenSizeContext)
+
+ 
 
   return (   
     <div className="navWrap">

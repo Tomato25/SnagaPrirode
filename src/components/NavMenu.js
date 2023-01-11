@@ -1,46 +1,58 @@
-import { React, useContext } from "react";
+import { React } from "react";
 import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  container,
+  item,
+} from "../animations/NavBarAnimation";
 
 import "./NavMenu.css";
 
 function NavMenu() {
+  const Links = [
+    { name: "Pocetna", to: "/", state: "" },
+
+    { name: "O nama", to: "/about", state: "" },
+
+    { name: "Proizvodi", to: "/products", state: "" },
+
+    { name: "Galerija", to: "/gallery", state: "" },
+
+    { name: "Kontakt", to: "/contact", state: "" },
+  ];
+
   return (
-    <div className="nav-links">
-      <NavLink to="/" className="nav-link" activeClassName="nav-link-active">
-        <motion.p initial={{y:-20}} animate={{y:1}} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-          Pocetna
-        </motion.p>
-      </NavLink>
-      <NavLink
-        to="/products"
-        className="nav-link"
-        activeClassName="nav-link-active"
-      >
-        <p>Proizvodi</p>
-      </NavLink>
-      <NavLink
-        to="/about"
-        className="nav-link"
-        activeClassName="nav-link-active"
-      >
-        <p>O nama</p>
-      </NavLink>
-      <NavLink
-        to="/gallery"
-        className="nav-link"
-        activeClassName="nav-link-active"
-      >
-        <p>Galerija</p>
-      </NavLink>
-      <NavLink
-        to="/contact"
-        className="nav-link"
-        activeClassName="nav-link-active"
-      >
-        <p>Kontakt</p>
-      </NavLink>
-    </div>
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="nav-links"
+      style={{ overflow: "hidden" }}
+    >
+      <AnimatePresence mode="wait"> 
+      {Links.map((link, index) => {
+        return (
+          
+            <motion.div  
+            key={index}
+           
+              className="linkCon"
+              variants={item}
+              exit={{ y: -100, opacity: 0}}
+            >
+              <NavLink
+                to={link.to}
+                className="nav-link"
+                activeClassName="nav-link-active"
+              >
+                <motion.p>{link.name}</motion.p>
+              </NavLink>
+            </motion.div>
+          
+        );
+      })}
+      </AnimatePresence>
+    </motion.div>
   );
 }
 
