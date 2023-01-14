@@ -1,6 +1,8 @@
 import React from "react";
 import "./Category.css";
 import Logo from "../images/Logo.png";
+import { motion } from "framer-motion";
+import { textAnimCon,logoAnim,imgAnimitem } from "../animations/aboutAnimations";
 
 
 function Category(props) {
@@ -8,7 +10,10 @@ function Category(props) {
 
   return (
     <div className="categoryWrap">
-      <div className="description">
+      <motion.div className="description" variants={textAnimCon}
+        initial="hidden"
+        animate="show"
+        exit={{ x: -1000 }}>
         {productData.categoryDescription.map((description, index) => {
           return (
             <div className="categoryText" key={index}>
@@ -16,14 +21,21 @@ function Category(props) {
             </div>
           );
         })}
-      </div>
+      </motion.div>
 
       <div className="gallery">
-        <img src={Logo} className="centerLogo" />
+        <motion.img src={Logo} className="centerLogo"  variants={logoAnim}
+          initial="hidden"
+          animate="show"
+          exit={{ opacity:0, delay:0.5 }}/>
 
-        <img
+        <motion.img
           src={require("../images/" + productData.categoryImage + ".jpg")}
           className="bgimg"
+          variants={imgAnimitem}
+          initial="hidden"
+          animate="show"
+          exit={{ x: 1000 }}
         />
       </div>
     </div>

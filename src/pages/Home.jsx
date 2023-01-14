@@ -45,6 +45,7 @@ function Home() {
           variants={sentence}
           initial="hidden"
           animate="visible"
+          viewport={{ once: true }}
           exit={{ x: -4300, opacity: 0, transition:{ duration:0.5 }}}
           className="title"
         >
@@ -62,6 +63,8 @@ function Home() {
           variants={imageanime}
           initial="hidden"
           animate="visible"
+          viewport={{ once: true }}
+
           exit={{ x: -4300, opacity: 0, transition:{ duration:0.5 }}}
 
           src={require("../images/background.jpg")}
@@ -131,7 +134,12 @@ function Home() {
       >
         {Links.map((link, index) => {
           return (
-            <motion.div style={{ overflow: "hidden" }} variants={item}>
+            <motion.div style={{ overflow: "hidden" }} variants={item}
+            whileHover={{
+              scale: 1.1,
+            }}
+            whileTap={{ scale: 0.9 }}
+            >
             <NavLink
               key={index}
               to={link.to}
@@ -141,6 +149,7 @@ function Home() {
             variants={linkanime}
             initial="hidden"
             animate="visible"
+            
           >{link.name.split("").map((char, index) => {
               return (
                 <motion.span key={char + "-" + index} variants={letters}>

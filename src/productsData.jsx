@@ -466,6 +466,7 @@ const productsData = [
             paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
           },
         ],
+        ingredients: [],
         benefits: [
           { benefit: "pomaže kod astme i alergije" },
           { benefit: "jača imunitet" },
@@ -494,6 +495,8 @@ const productsData = [
             paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
           },
         ],
+        ingredients: [],
+
         benefits: [
           { benefit: "nesanice" },
           { benefit: "oslabljenog imuniteta" },
@@ -524,6 +527,8 @@ const productsData = [
             paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
           },
         ],
+        ingredients: [],
+
         benefits: [
           { benefit: "jača imunitet" },
           { benefit: "smanjuje upale" },
@@ -555,6 +560,8 @@ const productsData = [
             paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
           },
         ],
+        ingredients: [],
+
         benefits: [
           { benefit: "poticanja iskašljavanja" },
           { benefit: "infekcije i bolesti bubrega" },

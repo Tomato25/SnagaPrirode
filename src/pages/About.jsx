@@ -4,7 +4,6 @@ import Logo from "../images/Logo.png";
 import { motion } from "framer-motion";
 import {
   textAnimCon,
-  textAnimitem,
   imgAnimitem,
   logoAnim
 } from "../animations/aboutAnimations";
@@ -19,17 +18,17 @@ function About() {
         animate="show"
         exit={{ x: -1000 }}
       >
-        <motion.div className="aboutText" variants={textAnimitem}>
+        <div className="aboutText">
           Smješteni smo u dubokoj šumi brdovitog dijela Slavonije, na prelijepom
           dijelu Psunja, u malome selu Gornja Šumetlica. Točna koordinata je:
           45.44036003561259, 17.31754545765254.
-        </motion.div>
-        <motion.div className="aboutText" variants={textAnimitem}>
+        </div>
+        <div className="aboutText" >
           Selo je lijepo i okruženo samom šumom, jako bogato vodom, divljači i
           ostalim šumskim bićima. Do prvog manjeg grada ima 15ak kilometara,
           tako da naše lijepo selo krasi potpuni mir, tišina i čistoća.
-        </motion.div>
-        <motion.div className="aboutText" variants={textAnimitem}>
+        </div>
+        <div className="aboutText" >
           Naša vizija je suživot u skladu sa prirodom. Djelujemo prema načelima
           permakulture i biodinamike. Cilj nam je stvoriti neovisno i održivo
           gospodarstvo, te uvjete i sredstva za ugodan život. Vidimo život u
@@ -38,7 +37,7 @@ function About() {
           primjerom želimo motivirati sve, a naročito mlade, da se okrenu svojim
           korijenima, da se vrate prirodi i da zajedno stvorimo bolji, zdraviji
           i veseliji svijet :)
-        </motion.div>
+        </div>
       </motion.div>
 
       <div className="rightCol">

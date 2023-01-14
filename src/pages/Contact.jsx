@@ -1,17 +1,40 @@
 import React from "react";
 import "./Contact.css";
 import Logo from "../images/Logo.png";
-import styled from "styled-components";
+import {motion} from "framer-motion"
+
+import {
+  textAnimCon,
+  imgAnimitem,
+  logoAnim
+} from "../animations/aboutAnimations";
+
 
 function Contact() {
   return (
       <div className="contactWrap">
-        <div className="contactLeftCol">
-          <img src={require("../images/contact.jpg")} className="bgimg" />
-          <img src={Logo} className="contactCenterLogo" />
+        <div className="contactLeftCol"
+        variants={textAnimCon}
+        initial="hidden"
+        animate="show"
+        exit={{ x: -1000 }}>
+          <motion.img src={require("../images/contact.jpg")} className="bgimg" 
+          variants={textAnimCon}
+          initial="hidden"
+          animate="show"
+          exit={{ x: -1000 }}/>
+          <motion.img src={Logo} className="contactCenterLogo" 
+                    variants={logoAnim}
+                    initial="hidden"
+                    animate="show"
+                    exit={{ opacity:0, delay:0.5 }}/>
 
         </div>
-        <div className="contactRightCol">
+        <motion.div className="contactRightCol"
+          variants={imgAnimitem}
+          initial="hidden"
+          animate="show"
+          exit={{ x: 1000 }}>
           <div className="contactCon">
           <div className="contactIconWrap">
             <svg
@@ -84,7 +107,7 @@ function Contact() {
 </svg>
             <div className="contactText">Instagram</div>
           </div><div className="contactText">opg_snaga_prirode</div></div>
-        </div>
+        </motion.div>
       </div>
   );
 }

@@ -1,3 +1,11 @@
+.galleryWrap {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+}
+
 .galleryCoursel {
     max-width: 80%;
     display: flex;
@@ -6,6 +14,8 @@
     align-items: center;
     padding-bottom: 2rem;
     margin-top: 2rem;
+    overflow: hidden;
+
   }
 
 

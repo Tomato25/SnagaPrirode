@@ -1,11 +1,11 @@
-import { React } from "react";
+import { React,useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   container,
   item,
 } from "../animations/NavBarAnimation";
-
+import MenuContext from "../context/MenuContext.jsx";
 import "./NavMenu.css";
 
 function NavMenu() {
@@ -20,6 +20,13 @@ function NavMenu() {
 
     { name: "Kontakt", to: "/contact", state: "" },
   ];
+
+  
+
+const {toggle} = useContext(MenuContext);
+const {toggler} = useContext(MenuContext);
+
+
 
   return (
     <motion.div
@@ -44,6 +51,7 @@ function NavMenu() {
                 to={link.to}
                 className="nav-link"
                 activeClassName="nav-link-active"
+                onClick={() => toggler(toggle)}
               >
                 <motion.p>{link.name}</motion.p>
               </NavLink>

@@ -10,7 +10,7 @@ import { imgAnimitem,logoAnim,container, item } from "../animations/productAnima
 function Products() {
   return (
     <div className="productsWrap">
-      <div className="productsDecoration">
+      <div className="productsDecoration">  
         <motion.img
           src={require("../images/products.jpg")}
           className="bgimages"
