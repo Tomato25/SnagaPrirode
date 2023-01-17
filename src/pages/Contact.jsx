@@ -55,7 +55,7 @@ function Contact() {
 
             <div className="contactText">Broj telefona</div>
           </div>
-          <div className="contactText">094-308-0274</div>
+          <div><a className="contactText" href="tel:+385977556607">097-755-6607</a></div>
           </div>
           <div className="contactCon">
           <div className="contactIconWrap">
@@ -77,7 +77,7 @@ function Contact() {
             </svg>
             <div className="contactText">E-mail</div>
             
-          </div><div className="contactText">snagaprirode@mail.com</div></div>
+          </div><div ><a className="contactText" href="mailto:snagaprirode@mail.com">snagaprirode@mail.com</a></div></div>
           <div className="contactCon">
           <div className="contactIconWrap">
             <svg
@@ -96,7 +96,7 @@ function Contact() {
               <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
             </svg>
             <div className="contactText">Telegram</div>
-          </div><div className="contactText">t.me/snagaprirode</div></div>
+          </div><div ><a className="contactText" href="https://t.me/snagaprirode" target="_blank"  rel="noreferrer">t.me/snagaprirode</a></div></div>
           <div className="contactCon">
           <div className="contactIconWrap">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -106,7 +106,7 @@ function Contact() {
   <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
 </svg>
             <div className="contactText">Instagram</div>
-          </div><div className="contactText">opg_snaga_prirode</div></div>
+          </div><div ><a className="contactText" href="https://www.instagram.com/opg_snaga_prirode/" target="_blank"  rel="noreferrer">opg_snaga_prirode</a></div></div>
         </motion.div>
       </div>
   );

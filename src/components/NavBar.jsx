@@ -28,6 +28,7 @@ function NavBar() {
               variants={title}
               initial="hidden"
               animate="show"
+              
             >
               <svg
                 width="40"
@@ -84,7 +85,7 @@ function NavBar() {
                   />
                 </g>
               </svg>
-              <NavLink to="/">
+              <NavLink to="/" >
                 <p className="menuLink">Snaga prirode</p>
               </NavLink>
             </motion.div>
@@ -92,7 +93,7 @@ function NavBar() {
             <div onClick={() => toggler(toggle)} className="menuContainer">
               <AnimatePresence>
                 {!toggle && screenSize.dynamicWidth > 1100 && (
-                  <div style={{overflow:"hidden"}}>
+                  <motion.div style={{overflow:"hidden"}}>
                   <motion.p
                     key={"menu"}
                     className="menuLink"
@@ -100,9 +101,10 @@ function NavBar() {
                     initial="hidden"
                     animate="show"
                     exit={{ x: 100, opacity: 0 }}
+                    
                   >
                     Izbornik
-                  </motion.p></div>
+                  </motion.p></motion.div>
                 )}{" "}
               </AnimatePresence>
               <motion.svg

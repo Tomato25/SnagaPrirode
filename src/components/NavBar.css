@@ -21,7 +21,8 @@
     align-items: center;
     gap:1rem;
     margin-right: 2rem;
-    
+    cursor: pointer;
+
 }
 
 .menuContainer {
@@ -31,6 +32,8 @@
     align-items: center;
     gap:1rem;
     margin-left: 2rem;
+    cursor: pointer;
+
     
 }
 
@@ -62,12 +65,8 @@ a {
     text-decoration: none;
     color: black;
     font-family: "Akaya Telivigala", cursive;
-}
 
-.menuLink:hover {
-    text-shadow: 2px 2px 5px rgba(71, 71, 71, 0.397);
 }
-
 
 @media (max-width: 1100px) {
 .bar {
