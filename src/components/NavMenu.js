@@ -34,6 +34,7 @@ const {toggler} = useContext(MenuContext);
       initial="hidden"
       animate="show"
       className="nav-links"
+      exit={{y:-200, opacity:0}}
       style={{ overflow: "hidden" }}
     >
       <AnimatePresence mode="wait"> 

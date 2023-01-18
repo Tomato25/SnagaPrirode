@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useContext,useEffect} from "react";
 import "./About.css";
 import Logo from "../images/Logo.png";
 import { motion } from "framer-motion";
@@ -7,8 +7,23 @@ import {
   imgAnimitem,
   logoAnim
 } from "../animations/aboutAnimations";
+import PageContext from "../context/PageContext";
 
 function About() {
+
+
+  const { currentPage } = useContext(PageContext);
+  const { setCurrentPage } = useContext(PageContext);
+const pageName = "O nama";
+
+useEffect (()=> {
+    setCurrentPage(pageName);
+    console.log(currentPage)
+},[])
+
+
+
+
   return (
     <div className="aboutWrap">
       <motion.div

@@ -5,8 +5,10 @@ import "./NavMenu";
 import NavMenu from "./NavMenu";
 import MenuContext from "../context/MenuContext.jsx";
 import ScreenSizeContext from "../context/ScreenSizeContext";
+import PageContext from "../context/PageContext";
+
 import { AnimatePresence, motion } from "framer-motion";
-import { title, menu } from "../animations/NavBarAnimation";
+import { title, menu, item } from "../animations/NavBarAnimation";
 
 function NavBar() {
   const location = useLocation();
@@ -15,7 +17,7 @@ function NavBar() {
 
   const { toggle } = useContext(MenuContext);
   const { toggler } = useContext(MenuContext);
-
+  const { currentPage } = useContext(PageContext);
   const { screenSize } = useContext(ScreenSizeContext);
 
   return (
@@ -28,7 +30,6 @@ function NavBar() {
               variants={title}
               initial="hidden"
               animate="show"
-              
             >
               <svg
                 width="40"
@@ -85,7 +86,7 @@ function NavBar() {
                   />
                 </g>
               </svg>
-              <NavLink to="/" >
+              <NavLink to="/">
                 <p className="menuLink">Snaga prirode</p>
               </NavLink>
             </motion.div>
@@ -93,18 +94,18 @@ function NavBar() {
             <div onClick={() => toggler(toggle)} className="menuContainer">
               <AnimatePresence>
                 {!toggle && screenSize.dynamicWidth > 1100 && (
-                  <motion.div style={{overflow:"hidden"}}>
-                  <motion.p
-                    key={"menu"}
-                    className="menuLink"
-                    variants={menu}
-                    initial="hidden"
-                    animate="show"
-                    exit={{ x: 100, opacity: 0 }}
-                    
-                  >
-                    Izbornik
-                  </motion.p></motion.div>
+                  <motion.div style={{ overflow: "hidden" }}>
+                    <motion.p
+                      key={"menu"}
+                      className="menuLink"
+                      variants={menu}
+                      initial="hidden"
+                      animate="show"
+                      exit={{ x: 100, opacity: 0 }}
+                    >
+                      Izbornik
+                    </motion.p>
+                  </motion.div>
                 )}{" "}
               </AnimatePresence>
               <motion.svg
@@ -129,7 +130,22 @@ function NavBar() {
               </motion.svg>
             </div>
           </div>
-          {toggle && <NavMenu />}
+          <div className="subNav">
+          <AnimatePresence mode="wait">
+            {!toggle && (
+              <motion.p
+                className="pageTitle"
+                variants={item}
+                initial="hidden"
+                animate="show"
+              >
+                {currentPage}
+              </motion.p>
+            )}
+
+            {toggle && <NavMenu />}
+          </AnimatePresence>
+          </div>
         </div>
       )}
     </div>

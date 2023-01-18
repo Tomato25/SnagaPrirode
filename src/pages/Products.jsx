@@ -1,23 +1,38 @@
-import { React } from "react";
+import { React, useEffect, useContext } from "react";
 import "./Products.css";
 import Logo from "../images/Logo.png";
 import { NavLink } from "react-router-dom";
 import productData from "../productsData";
 import { motion } from "framer-motion";
-import { imgAnimitem,logoAnim,container, item } from "../animations/productAnimations";
+import {
+  imgAnimitem,
+  logoAnim,
+  container,
+  item,
+} from "../animations/productAnimations";
+import PageContext from "../context/PageContext";
 
 
 function Products() {
+  const { currentPage } = useContext(PageContext);
+  const { setCurrentPage } = useContext(PageContext);
+  const pageName = "Proizvodi";
+
+  useEffect(() => {
+    setCurrentPage(pageName);
+    console.log(currentPage);
+  }, []);
+
   return (
     <div className="productsWrap">
-      <div className="productsDecoration">  
+      <div className="productsDecoration">
         <motion.img
           src={require("../images/products.jpg")}
           className="bgimages"
           variants={imgAnimitem}
           initial="hidden"
           animate="show"
-          exit={{ y: -1000, transition:{duration:1}}}
+          exit={{ y: -1000, transition: { duration: 1 } }}
         />
         <motion.img
           src={Logo}
@@ -25,33 +40,32 @@ function Products() {
           variants={logoAnim}
           initial="hidden"
           animate="show"
-          exit={{ opacity: 0}}
+          exit={{ opacity: 0 }}
         />
       </div>
 
-      <motion.div className="products-nav-links" 
-      variants={container}
-      initial="hidden"
-      animate="show">
-
-
+      <motion.div
+        className="products-nav-links"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
         {productData.map((product, index) => {
           return (
-
-            <motion.div             
+            <motion.div
               variants={item}
-              exit={{ y: 1000, opacity: 0, transition:{duration:1}}}
+              exit={{ y: 1000, opacity: 0, transition: { duration: 1 } }}
             >
-            <NavLink
-              key={index}
-              to="/products/product"
-              state={{ data: product }}
-              className="products-nav-link"
-              activeClassName="nav-link-active"
-            >
-              <p>{product.category}</p>
-            </NavLink>
-            </ motion.div>
+              <NavLink
+                key={index}
+                to="/products/product"
+                state={{ data: product }}
+                className="products-nav-link"
+                activeClassName="nav-link-active"
+              >
+                <p>{product.category}</p>
+              </NavLink>
+            </motion.div>
           );
         })}
       </motion.div>

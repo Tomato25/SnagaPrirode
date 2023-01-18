@@ -44,11 +44,11 @@
     .productsWrap {
         width: 100vw;
         height: max-content;
-        gap: 4rem;
+        gap: 2rem;
     }
 
     .productsDecoration {
-        height:60vw;
+        height:40vw;
         width: 95%;
         margin: 0 auto;
 

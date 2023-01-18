@@ -12,6 +12,7 @@ import Footer from "../components/Footer";
 import { MenuProvider } from "../context/MenuContext";
 import { ScreenSizeProvider } from "../context/ScreenSizeContext";
 import { AnimatePresence } from "framer-motion";
+import { PageProvider } from "../context/PageContext";
 
 function Pages() {
 
@@ -21,6 +22,7 @@ function Pages() {
     <div className="wrap" >
         <ScreenSizeProvider>
           <MenuProvider>
+            <PageProvider>
           <NavBar />
           <AnimatePresence mode="wait" initial={false}>
               <Routes  location={location}  key={location.pathname}>
@@ -32,6 +34,7 @@ function Pages() {
                 <Route  path="/gallery" element={<Gallery />} />
               </Routes>
               </AnimatePresence>
+              </PageProvider>
           </MenuProvider>
 
 

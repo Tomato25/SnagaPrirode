@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
   font-family: "Akaya Telivigala", cursive;
   height: auto;
   width: 80%;
@@ -21,10 +20,7 @@
 
 }
 
-.pageName {
-  margin: 2.5rem;
-  font-size: 2.5rem;
-}
+
 
 .aboutText {
   text-align: left;
@@ -46,7 +42,7 @@
 }
 
 .bgimg {
-  height: 90%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;

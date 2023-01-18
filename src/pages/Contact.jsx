@@ -1,7 +1,8 @@
-import React from "react";
+import {React,useContext,useEffect} from "react";
 import "./Contact.css";
 import Logo from "../images/Logo.png";
 import {motion} from "framer-motion"
+import PageContext from "../context/PageContext";
 
 import {
   textAnimCon,
@@ -11,6 +12,18 @@ import {
 
 
 function Contact() {
+
+
+  const { currentPage } = useContext(PageContext);
+  const { setCurrentPage } = useContext(PageContext);
+const pageName = "Kontakt";
+
+useEffect (()=> {
+    setCurrentPage(pageName);
+    console.log(currentPage)
+}, [])
+
+
   return (
       <div className="contactWrap">
         <div className="contactLeftCol"

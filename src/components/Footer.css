@@ -1,15 +1,8 @@
 .footerCon {
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    color:black;
-    font-family: 'Great Vibes', cursive;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr;
-    grid-template-areas: "subtitle subtitle subtitle"
-                         "leftCol middleCol rightCol";
     width: 80%;   
     border-top:  1px solid black;
-    margin: 1rem auto 0 auto;
+    margin:0 auto;
+    margin-bottom: 2rem;
 }
 
 .subtitle {
@@ -17,9 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     letter-spacing: 5px;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-family: 'Great Vibes', cursive;
+
 }
 
 .footerWrap{
@@ -46,12 +41,16 @@
 
 .footer-nav-link {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: "Akaya Telivigala", cursive;
     font-size: 1rem;
 }
 
 .footerLinks {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: row;
+    gap:1rem;
+    justify-content: center;
+    margin: 0 auto;
+
 }

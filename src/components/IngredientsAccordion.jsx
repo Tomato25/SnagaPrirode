@@ -1,5 +1,7 @@
 import { React, useState } from "react";
 import "./Accordion.css";
+import { AnimatePresence, motion } from "framer-motion";
+import { container, item } from "../animations/accordionAnimations";
 
 function IngredientsAccordion(props) {
   const [accordionToggle, setAccordionToggle] = useState(false);
@@ -31,16 +33,24 @@ function IngredientsAccordion(props) {
         </svg>
       </div>
       {accordionToggle && (
-        <div className="benefitsAccordionContent">
-          {props.ingredients.map((ingredients, index) => {
-            return (
-              <ul key={index}>
-                <li>{ingredients.ingredient}</li>
-              </ul>
-            );
-          })}
-        </div>
-      ) }
+        <AnimatePresence mode="wait">
+          <motion.ul
+            className="benefitsAccordionContent"
+            variants={container}
+            initial="hidden"
+            animate="show"
+            exit={{ y: -100, opacity: 0 }}
+          >
+            {props.ingredients.map((ingredients, index) => {
+              return (
+                <motion.li key={index} variants={item}>
+                  {ingredients.ingredient}
+                </motion.li>
+              );
+            })}
+          </motion.ul>
+        </AnimatePresence>
+      )}
     </div>
   );
 }
