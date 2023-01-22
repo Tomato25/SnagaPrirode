@@ -14,6 +14,7 @@ import {
   linkanime,
   letters
 } from "../animations/homeAnimations";
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   const title = "Snaga prirode";
@@ -38,8 +39,20 @@ function Home() {
 ];
 
   return (
+    
     <motion.div           
     className="wrapper" >
+      <Helmet>
+      <title>OPG Snaga Prirode</title>
+      <meta name="description" content="OPG Snaga prirode" />
+      <meta property="og:title" content="OPG Snaga prirode" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content={Logo}/>
+      <meta property="og:description" content="Naša vizija je suživot u skladu sa prirodom. Cilj nam je stvoriti neovisno i održivo
+          gospodarstvo, te uvjete i sredstva za ugodan život."/>
+      <meta property="og:url" content="https://snagaprirode.com.hr/"/>
+      <meta name="keywords" content="farma, opg, snaga prirode, domaće, voće, melemi, sokovi, sadnice, plodovi" />
+      </Helmet>
       <div className="middleTitle">
         <motion.h1
           variants={sentence}
