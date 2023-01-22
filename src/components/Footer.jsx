@@ -1,10 +1,14 @@
 import React from "react";
 import "./Footer.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Footer() {
+  const location = useLocation();
+
+  console.log(location.pathname)
   return (
     <div className="footerWrap">
+      {location.pathname !== "/" && (
       <div className="footerCon">
         <div className="subtitle">
           <h1>"Život u skladu s prirodom"</h1>
@@ -48,6 +52,7 @@ function Footer() {
           </NavLink>
         </div>
       </div>
+      )}
     </div>
   );
 }
