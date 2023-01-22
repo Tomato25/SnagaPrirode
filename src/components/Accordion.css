@@ -1,41 +1,45 @@
+.benefitsAccordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  line-height: 1rem;
+  font-size: 1.3rem;
+  color: rgb(27, 27, 27);
+  font-family: "Akaya Telivigala", cursive;
+  margin-left: 1.5rem;
+}
 
-  
-.benefitsAccordion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    line-height: 1rem;
-      font-size: 1.3rem;
-      color:rgb(27, 27, 27);
-      font-family: "Akaya Telivigala", cursive;
-    margin-left: 1.5rem;
+.benefitsAccordionTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.benefitsAccordionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .benefitsAccordion {
+    margin: 0 auto;
+    width: 50%;
   }
-  
+
   .benefitsAccordionTitle {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    font-size: 1.1rem;
   }
-  
-  .benefitsAccordionContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    gap: 1rem;
-  }
-  
-  @media (max-width: 1100px) {
-    .benefitsAccordion{
-        margin: 0 auto;
-        width: 50%;
-    }
 
+  .benefitsAccordionContent {
+    font-size: 1rem;
   }
-  
-  
+}

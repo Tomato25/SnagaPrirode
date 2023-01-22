@@ -50,7 +50,7 @@
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .productCon {
     flex-direction: column;
     width: 100%;
@@ -72,6 +72,34 @@
   }
   .productGallery {
     max-width: 100%;
+  }
+
+
+}
+
+
+@media (min-width: 501px) and (max-width: 1100px) {
+  .productCon {
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+  }
+
+  .productText {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  .productTitle {
+    font-size: 2rem;
+  }
+
+  .productDescription {
+    text-align: center;
+    margin:0 auto;
+    font-size: 1rem;
+  }
+  .productGallery {
+    max-width: 50%;
   }
 
 
