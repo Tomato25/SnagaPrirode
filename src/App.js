@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import Pages from "./pages/Pages"
-import { HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 function App() {
