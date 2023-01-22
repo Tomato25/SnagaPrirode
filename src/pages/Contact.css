@@ -94,11 +94,19 @@ hr {
     margin:0 auto;
 }
 
+
   .contactLeftCol {
     width: 95%;
     margin: 0 auto;
     height: 40vh;
   }
+
+  .contactText {
+    font-size: 1.5rem;
+
+  }
+
+  
 
   .bgimg {
     margin-top: 2rem;
@@ -107,7 +115,7 @@ hr {
 
 
   .contactCenterLogo {
-    width: 20rem;
+    width: 14rem;
     position: absolute;
     top:auto;
     right: auto;

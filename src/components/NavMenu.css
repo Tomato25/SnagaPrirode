@@ -104,6 +104,12 @@
 
 }
 
+.btn-one {
+
+  font-size: 1.3rem;
+
+}
+
 
 
 
@@ -114,5 +120,14 @@
         white-space: nowrap;
 
     }
+
+    
+    .btn-one{
+
+  font-size: 1rem;
+
+}
+
+
 
 }

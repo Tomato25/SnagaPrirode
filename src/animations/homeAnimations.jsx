@@ -31,8 +31,8 @@ export const icon = {
 
     fill: "rgba(255, 255, 255, 1)",
     transition: {
-      delay: 3,
-      duration: 1,
+      delay: 2,
+      duration: 0.5,
     },
   },
 };
@@ -46,8 +46,8 @@ export const icon2 = {
     pathLength: 1,
     fill: "rgba(255, 255, 255, 1)",
     transition: {
-      delay: 3,
-      duration: 1,
+      delay: 2,
+      duration: 0.5,
     },
   },
 };
@@ -62,7 +62,7 @@ opacity:0
 
     transition: {
       delay: 0,
-      duration: 2,
+      duration: 1,
       bounce: 0.2,
       type: "spring",
     },
@@ -78,9 +78,9 @@ export const imageanime = {
     delay: 2,
     opacity: 1,
     transition: {
-      delay: 3,
+      delay: 2,
 
-      duration: 1,
+      duration: 0.5,
     },
   },
 };

@@ -2,11 +2,15 @@
     width: 80%;   
     border-top:  1px solid black;
     margin:0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2rem;
+    align-items: center;
 }
 
 .subtitle {
-    grid-area: subtitle;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +31,6 @@
 }
 
 .footerLeftCol {
-    grid-area: leftCol;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -52,5 +55,21 @@
     gap:1rem;
     justify-content: center;
     margin: 0 auto;
+
+}
+
+@media (max-width: 1000px) {
+
+
+    .subtitle {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .footer-nav-link {
+        font-size: 0.7rem;
+
+
+    }
 
 }

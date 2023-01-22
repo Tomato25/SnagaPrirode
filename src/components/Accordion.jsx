@@ -1,5 +1,7 @@
 import { React, useState } from "react";
 import "./Accordion.css";
+import { AnimatePresence, motion } from "framer-motion";
+import { container, item } from "../animations/accordionAnimations";
 
 function Accordion(props) {
   const [accordionToggle, setAccordionToggle] = useState(false);
@@ -31,16 +33,20 @@ function Accordion(props) {
         </svg>
       </div>
       {accordionToggle && (
-        <div className="benefitsAccordionContent">
-          {props.benefits.map((benefits, index) => {
-            return (
-              <ul key={index}>
-                <li>{benefits.benefit}</li>
-              </ul>
-            );
-          })}
-        </div>
-      ) }
+        <AnimatePresence mode="wait">
+          <motion.ul
+            className="benefitsAccordionContent"
+            variants={container}
+            initial="hidden"
+            animate="show"
+            exit={{ y: -100, opacity: 0 }}
+          >
+            {props.benefits.map((benefits, index) => {
+              return <motion.li key={index} variants={item}>{benefits.benefit}</motion.li>;
+            })}
+          </motion.ul>
+        </AnimatePresence>
+      )}
     </div>
   );
 }

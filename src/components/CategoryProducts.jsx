@@ -19,7 +19,7 @@ function CategoryProducts(props) {
         viewport={{ once: true }}
         variants={{
           visible: { opacity: 1, x:0, transition:{delay:0.5, duration:0.5}  },
-          hidden: { opacity: 0 ,x:-1000 }
+          hidden: { opacity: 0 ,x:-500 }
         }}
         exit={{opacity:0}}>
           <div className="productTitle">

@@ -40,15 +40,14 @@
 
 
 
-@media (max-width: 1100px) {
+@media (max-width: 700px) {
     .productsWrap {
         width: 100vw;
         height: max-content;
-        gap: 2rem;
     }
 
     .productsDecoration {
-        height:40vw;
+        height:50vw;
         width: 95%;
         margin: 0 auto;
 
@@ -67,8 +66,20 @@
     color: black;
     font-family: "Akaya Telivigala", cursive;
     margin: 0 auto;
-    font-size: 2rem;
-
-    
+    font-size: 1.5rem;
 }
+
+
+}
+
+
+@media (max-width: 1100px) {
+    .products-nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homeLogo {
+        width: 14rem;
+    }
 }
