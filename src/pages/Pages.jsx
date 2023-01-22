@@ -24,6 +24,12 @@ function Pages() {
       <Helmet>
       <title>OPG Snaga Prirode</title>
       <meta name="description" content="OPG snaga prirode" />
+      <meta property="og:title" content="OPG Snaga prirode" />
+<meta property="og:image" content="snaga_prirode\public\favicon.ico"/>
+<meta property="description" content="Naša vizija je suživot u skladu sa prirodom. Djelujemo prema načelima
+          permakulture i biodinamike. Cilj nam je stvoriti neovisno i održivo
+          gospodarstvo, te uvjete i sredstva za ugodan život."/>
+<meta property="og:url" content="https://www.snagaprrode.com.hr/"/>
       <meta name="keywords" content="farma, opg, snaga prirode, domaće, voće, melemi, sokovi, sadnice, plodovi" />
       </Helmet>
         <ScreenSizeProvider>
