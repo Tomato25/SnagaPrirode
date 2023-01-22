@@ -13,6 +13,7 @@ import { MenuProvider } from "../context/MenuContext";
 import { ScreenSizeProvider } from "../context/ScreenSizeContext";
 import { AnimatePresence } from "framer-motion";
 import { PageProvider } from "../context/PageContext";
+import { Helmet } from "react-helmet-async";
 
 function Pages() {
 
@@ -20,11 +21,16 @@ function Pages() {
 
   return (
     <div className="wrap" >
+      <Helmet>
+      <title>OPG Snaga Prirode</title>
+      <meta name="description" content="OPG snaga prirode" />
+      <meta name="keywords" content="farma, opg, snaga prirode, domaće, voće, melemi, sokovi, sadnice, plodovi" />
+      </Helmet>
         <ScreenSizeProvider>
           <MenuProvider>
             <PageProvider>
           <NavBar />
-          <AnimatePresence mode="wait" initial={false}>
+          <AnimatePresence mode="wait">
               <Routes  location={location}  key={location.pathname}>
                 <Route   path="/" exact element={<Home />} />
                 <Route  path="/products" element={<Products />} />

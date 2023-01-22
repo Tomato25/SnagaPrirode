@@ -50,7 +50,7 @@
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 700px) {
   .productCon {
     flex-direction: column;
     width: 100%;
@@ -59,11 +59,16 @@
 
   .productText {
     width: 100%;
+    font-size: 0.8rem;
   }
-  
+  .productTitle {
+    font-size: 2rem;
+  }
+
   .productDescription {
     text-align: center;
     margin:0 auto;
+    font-size: 1rem;
   }
   .productGallery {
     max-width: 100%;

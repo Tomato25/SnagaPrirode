@@ -60,4 +60,18 @@
     margin: 0 auto;
   }
 
+  
+.splide__pagination__page {
+  border-radius: 0 !important;
+  width:60px !important;
+}
+
+.splide__pagination__page {
+  border-radius: 2px !important;
+  width:40px !important;
+  height: 5px !important;
+}
+
+
+
 }
