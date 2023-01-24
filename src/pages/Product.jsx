@@ -4,7 +4,7 @@ import Category from "../components/Category";
 import "./Product.css";
 import { useLocation } from "react-router-dom";
 import PageContext from "../context/PageContext";
-
+import { Helmet } from "react-helmet-async";
 
 function Product() {
 
@@ -28,6 +28,12 @@ const pageName = data.category;
   return (
 
     <div className="productWrap">
+      <Helmet>
+      <title>Snaga Prirode | Proizvodi</title>
+      <meta name="description" content="OPG Snaga prirode" />
+      
+      <meta name="keywords" content="farma, opg, snaga prirode, domaće, voće, melemi, sokovi, sadnice, plodovi" />
+      </Helmet>
       <Category data={location.state.data}/>
       <CategoryProducts data={location.state.data}/>
     </div>

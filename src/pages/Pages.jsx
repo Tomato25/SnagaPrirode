@@ -15,6 +15,8 @@ import { AnimatePresence } from "framer-motion";
 import { PageProvider } from "../context/PageContext";
 import { Helmet } from "react-helmet-async";
 import Logo from "../images/LogoVector.svg"
+import ScrollToTop from "../ScrollToTop";
+
 function Pages() {
 
   const location = useLocation();
@@ -26,6 +28,7 @@ function Pages() {
             <PageProvider>
           <NavBar />
           <AnimatePresence mode="wait">
+            <ScrollToTop>
               <Routes  location={location}  key={location.pathname}>
                 <Route   path="/" exact element={<Home />} />
                 <Route  path="/products" element={<Products />} />
@@ -34,6 +37,7 @@ function Pages() {
                 <Route path="/about" element={<About />} />
                 <Route  path="/gallery" element={<Gallery />} />
               </Routes>
+              </ScrollToTop>
               </AnimatePresence>
               </PageProvider>
           </MenuProvider>

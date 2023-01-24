@@ -5,6 +5,7 @@ import "@splidejs/react-splide/css";
 import ProductSplide from "./ProductSplide";
 import Accordion from "./Accordion";
 import IngredientsAccordion from "./IngredientsAccordion";
+import ActsAsAccordion from "./ActsAsAccordion"
 import { motion } from "framer-motion";
 import {icon,icon2} from "../animations/homeAnimations"
 
@@ -22,7 +23,7 @@ function CategoryProducts(props) {
           hidden: { opacity: 0 ,x:-50 }
         }}
         exit={{opacity:0}}>
-          <div className="productTitle">
+        {product.name.length > 0 ? ( <div className="productTitle">
           <svg
           width="400"
           height="2"
@@ -55,6 +56,7 @@ function CategoryProducts(props) {
           />
         </svg>
           </div>
+        ) : (<div></div>)}
           <div className="productCon">
           
           <div className="productText">
@@ -67,6 +69,11 @@ function CategoryProducts(props) {
           })}
           {product.benefits.length > 0 ? (
             <Accordion benefits={product.benefits}/>
+          ) : (
+            <div></div>
+          )}
+          {product.actsAs.length > 0 ? (
+            <ActsAsAccordion benefits={product.actsAs}/>
           ) : (
             <div></div>
           )}

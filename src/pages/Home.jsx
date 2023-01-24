@@ -17,8 +17,8 @@ import {
 import { Helmet } from "react-helmet-async";
 
 function Home() {
-  const title = "Snaga prirode";
-  const subtitle = "Život u skladu s prirodom";
+  const title = "SNAGA PRIRODE";
+  const subtitle = '"Život u skladu s prirodom"';
 
   const Links = [
     {name: "O nama",
@@ -43,7 +43,7 @@ function Home() {
     <motion.div           
     className="wrapper" >
       <Helmet>
-      <title>OPG Snaga Prirode</title>
+      <title>Snaga Prirode</title>
       <meta name="description" content="OPG Snaga prirode" />
       
       <meta name="keywords" content="farma, opg, snaga prirode, domaće, voće, melemi, sokovi, sadnice, plodovi" />

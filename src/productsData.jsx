@@ -39,9 +39,10 @@ const productsData = [
           { src: "jabuka1" },
           { src: "jabuka2" },
           { src: "jabuka3" },
-          { src: "jabuka4" },
         ],
         ingredients: [],
+        actsAs:[],
+
         benefits: [],
       },
       {
@@ -64,8 +65,11 @@ const productsData = [
           { src: "kruska3" },
           { src: "kruska4" },
           { src: "kruska5" },
+          { src: "kruska6" },
+
         ],
         ingredients: [],
+        actsAs:[],
 
         benefits: [],
       },
@@ -75,16 +79,14 @@ const productsData = [
         description: [
           {
             paragraph:
-              "Posađeno desetak vrsta krušaka, koje sazrijevaju od kolovoza do studenog. Svih mogućih boja, okusa i oblika. Vjerujemo da svatko može pronaći i izabrati baš onu koja je za nju/njega!",
+            "U nasadima trenutno imamo vinogradarske breskve. Krupne, sočne i ukusne breskve koje dozrijevaju krajem kolovoza. Osvajaju svačije nepce svojim sokom, jednostavno prefine!"
           },
-          {
-            paragraph:
-              "Imamo kruške koje su izvrsne za jesti direktno sa stabla, one koje su odlične za preradu (izradu pekmeza),  te naravno kruške za rakiju i za kiseljenje.",
-          },
+         
         ],
         imageFolder: "Breskve",
         images: [{ src: "breskva1" }],
         ingredients: [],
+        actsAs:[],
 
         benefits: [],
       },
@@ -103,6 +105,7 @@ const productsData = [
         imageFolder: "Orasi",
         images: [{ src: "orasi1" }, { src: "orasi2" }],
         ingredients: [],
+        actsAs:[],
 
         benefits: [],
       },
@@ -117,7 +120,7 @@ const productsData = [
       },
       {
         paragraph:
-          "U ponudi imamo sadnice različitih veličina i starosti. Sve u ponudi i sami uzgajamo za sebe, u našem vrtu i za ukrašavanje okućnice, tako da za svaku kupljenu sadnicu možete dobiti uputstva za daljnju njegu, brigu i uzgoj biljke iz vlastitog iskustva.",
+          "U ponudi imamo sadnice različitih veličina i starosti. Sve u ponudi uzgajamo i zasebe, u našem vrtu i za ukrašavanje okućnice, tako da za svaku kupljenu sadnicu možete dobiti uputstva za daljnju njegu, brigu i uzgoj biljke iz vlastitog iskustva.",
       },
       {
         paragraph:
@@ -132,11 +135,11 @@ const productsData = [
         description: [
           {
             paragraph:
-              "Imamo veliki izbor jabuka, za svačiji ukus. Trenutno posađeno 20ak vrsta koje sazrijevaju od srpnja pa skroz do kraja studenog. Od malih do ogromnih, kiselih do slatkih, svih boja i oblika.",
+              "U ponudi imamo više vrsta kaktusa. Od vrlo otpornih do jako osjetljivih, bodljikavih do mekanih, plosnatih i okruglih.",
           },
           {
             paragraph:
-              "Jabuke koje će vas podsjetiti na djetinjstvo, bogate okusom i mirisom!",
+              "Zahvalan, jednostavan za održavanje i jako lijepi ukras za svačiju kuću.",
           },
         ],
         imageFolder: "Kaktusi",
@@ -154,7 +157,7 @@ const productsData = [
           { src: "kaktus11" },
         ],
         ingredients: [],
-
+        actsAs:[],
         benefits: [],
       },
       {
@@ -163,11 +166,7 @@ const productsData = [
         description: [
           {
             paragraph:
-              "Posađeno desetak vrsta krušaka, koje sazrijevaju od kolovoza do studenog. Svih mogućih boja, okusa i oblika. Vjerujemo da svatko može pronaći i izabrati baš onu koja je za nju/njega!",
-          },
-          {
-            paragraph:
-              "Imamo kruške koje su izvrsne za jesti direktno sa stabla, one koje su odlične za preradu (izradu pekmeza),  te naravno kruške za rakiju i za kiseljenje.",
+              "Kod nas još možete pronaći razne vrste sukulenata, za svaki dio kuće i dvorišta. Od ljepotana za sunčani prozor spavaće sobe, do onih otpornih na nepovoljne vremenske uvjete, koji će biti savršeni za Vaš kamenjar.",
           },
         ],
         imageFolder: "Sukulenti",
@@ -191,7 +190,7 @@ const productsData = [
           { src: "sukulent16" },
         ],
         ingredients: [],
-
+        actsAs:[],
         benefits: [],
       },
       {
@@ -200,16 +199,17 @@ const productsData = [
         description: [
           {
             paragraph:
-              "Kvalitetni orasi, od srednje veličine do krupnih. Odličnog okusa, dobri za jesti sirovi, kao i za izradu kolača i ostalih slastica. Orah je nevjerojatan izvor vrijednih nutrijenata, sadrži: antioksidanse, željezo, kalcij, magnezij, fosfor, cink, mangan, masne kiseline te vitamine B, E i K.",
+              " Sadnice ružmarina koje uzgajamo iz reznica i iz sjemena. Raznih vrsta, vrlo otpornih na niske temperature i snijeg.",
           },
           {
-            paragraph: "Sirovi orašasti plodovi su melem za tijelo!",
+            paragraph: " Odlični za ukrasiti svačiju okućnicu, koliko izgledom toliko i mirisom. Također odličan i vrlo ukusan začin.",
           },
         ],
         imageFolder: "Ruzmarin",
 
         images: [{ src: "ruzmarin1" }, { src: "ruzmarin2" }],
         ingredients: [],
+        actsAs:[],
 
         benefits: [],
       },
@@ -218,17 +218,13 @@ const productsData = [
         name: "Lavanda",
         description: [
           {
-            paragraph:
-              "Kvalitetni orasi, od srednje veličine do krupnih. Odličnog okusa, dobri za jesti sirovi, kao i za izradu kolača i ostalih slastica. Orah je nevjerojatan izvor vrijednih nutrijenata, sadrži: antioksidanse, željezo, kalcij, magnezij, fosfor, cink, mangan, masne kiseline te vitamine B, E i K.",
-          },
-          {
-            paragraph: "Sirovi orašasti plodovi su melem za tijelo!",
+            paragraph: "Prekrasne sadnice za Vašu okućnicu, balkon ili prozor. Svojim cvjetovima i mirisom ukrašava svaki prostor. Vrlo korisna kao čaj i zaštita za Vašu odjeću.",
           },
         ],
         imageFolder: "Lavanda",
         images: [{ src: "lavanda1" }],
         ingredients: [],
-
+        actsAs:[],
         benefits: [],
       },
     ],
@@ -244,14 +240,6 @@ const productsData = [
       {
         paragraph: "Dostupni su u pakiranjima od 1 i 5 litara.",
       },
-      {
-        paragraph:
-          "Voćke su tretirane isključivo prirodnim sredstvima za zaštitu. Trudimo se minimalizirati ili u potpunosti zaobići upotrebu kemijskih sredstava.",
-      },
-      {
-        paragraph:
-          "Nadamo se da ćete uživati u okusima, mirisima i blagodatima koje pruža naše voće!",
-      },
     ],
     categoryImage: "voce",
     products: [
@@ -261,6 +249,7 @@ const productsData = [
         description: [],
         imageFolder: "",
         images: [],
+        actsAs:[],
         benefits: [],
         ingredients: [],
       },
@@ -302,10 +291,12 @@ const productsData = [
             paragraph: "Dostupan je u pakiranjima od: 7ml, 30ml i 50ml.",
           },
         ],
+        actsAs:[],
+
         ingredients: [
-          { ingredient: "konopljino ulje" },
           { ingredient: "kokosovo ulje" },
           { ingredient: "maslinovo ulje" },
+          { ingredient: "konopljino ulje" },
           { ingredient: "ružmarinovo ulje" },
           { ingredient: "ulje bijelog bora" },
           { ingredient: "pčelinji vosak" },
@@ -320,11 +311,10 @@ const productsData = [
           { benefit: "seboreje", id: "7" },
           { benefit: "psorijaze" , id: "8"},
           { benefit: "neurodermatitisa", id: "9" },
-          { benefit: "neurodermatitisa", id: "10" },
-          { benefit: "raznih herpesa" , id: "11"},
-          { benefit: "ožiljaka od alergija", id: "12" },
-          { benefit: "ugriza kukaca", id: "13" },
-          { benefit: "još mnogo toga, popis se stalno povećava!", id: "14" },
+          { benefit: "raznih herpesa" , id: "10"},
+          { benefit: "ožiljaka od alergija", id: "11" },
+          { benefit: "ugriza kukaca", id: "12" },
+          { benefit: "još mnogo toga, popis se stalno povećava!", id: "13" },
         ],
         imageFolder: "Melemi",
         images: [{ src: "melem1" }, { src: "melem2" }],
@@ -347,13 +337,16 @@ const productsData = [
           },
         ],
         ingredients: [
-          { ingredient: "konopljino ulje" },
+          
           { ingredient: "kokosovo ulje" },
           { ingredient: "maslinovo ulje" },
+          { ingredient: "konopljino ulje" },
           { ingredient: "ružmarinovo ulje" },
           { ingredient: "ulje bijelog bora" },
           { ingredient: "pčelinji vosak" },
         ],
+        actsAs:[],
+
         benefits: [],
         imageFolder: "Melemi",
         images: [{ src: "melem3" }, { src: "melem4" }],
@@ -375,12 +368,14 @@ const productsData = [
           },
         ],
         ingredients: [
-          { ingredient: "konopljino ulje" },
           { ingredient: "kokosovo ulje" },
           { ingredient: "maslinovo ulje" },
+          { ingredient: "konopljino ulje" },
           { ingredient: "pčelinji vosak" },
         ],
         benefits: [],
+        actsAs:[],
+
         imageFolder: "Melemi",
         images: [{ src: "melem5" }, { src: "melem6" }],
       },
@@ -400,11 +395,14 @@ const productsData = [
             paragraph: "Dostupan je u pakiranjima od: 50ml i 100ml.",
           },
         ],
+        actsAs:[],
 
         ingredients: [
           { ingredient: "svježi korijen gaveza" },
           { ingredient: "kokosovo ulje" },
           { ingredient: "maslinovo ulje" },
+          { ingredient: "ulje mente" },
+
           { ingredient: "pčelinji vosak" },
         ],
         benefits: [
@@ -467,6 +465,8 @@ const productsData = [
           },
         ],
         ingredients: [],
+        actsAs:[],
+
         benefits: [
           { benefit: "pomaže kod astme i alergije" },
           { benefit: "jača imunitet" },
@@ -496,6 +496,7 @@ const productsData = [
           },
         ],
         ingredients: [],
+        actsAs:[],
 
         benefits: [
           { benefit: "nesanice" },
@@ -528,7 +529,7 @@ const productsData = [
           },
         ],
         ingredients: [],
-
+        actsAs:[],
         benefits: [
           { benefit: "jača imunitet" },
           { benefit: "smanjuje upale" },
@@ -557,20 +558,11 @@ const productsData = [
               "U njegovom su sastavu između ostalog borneol, karvakrol, timol, saponini, tanin, glikozidi, vitamini A, C, D, B-kompleks, magnezij, fosfor, kalij i cink.",
           },
           {
-            paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
+            paragraph: "Dostupan je u pakiranjima od: 25g, 50g i 100g.",
           },
         ],
         ingredients: [],
-
-        benefits: [
-          { benefit: "poticanja iskašljavanja" },
-          { benefit: "infekcije i bolesti bubrega" },
-          { benefit: "depresije i neuroloških problema" },
-          { benefit: "tuberkoloze" },
-          { benefit: "bolesti probavnog sustava" },
-          { benefit: "nesanice i migrene" },
-          { benefit: "stimuliranja seksualne želje" },
-          { benefit: "anemije" },
+        actsAs:[
           { benefit: "antireumatik" },
           { benefit: "antiseptik" },
           { benefit: "antikoagulans" },
@@ -581,6 +573,17 @@ const productsData = [
           { benefit: "relaksant" },
           { benefit: "antiparazitik" },
           { benefit: "prirodni konzervans i insekticid" },
+        ],
+        benefits: [
+          { benefit: "poticanja iskašljavanja" },
+          { benefit: "infekcije i bolesti bubrega" },
+          { benefit: "depresije i neuroloških problema" },
+          { benefit: "tuberkoloze" },
+          { benefit: "bolesti probavnog sustava" },
+          { benefit: "nesanice i migrene" },
+          { benefit: "stimuliranja seksualne želje" },
+          { benefit: "anemije" },
+          
         ],
         imageFolder: [],
         images: [],

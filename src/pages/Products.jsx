@@ -11,6 +11,7 @@ import {
   item,
 } from "../animations/productAnimations";
 import PageContext from "../context/PageContext";
+import { Helmet } from "react-helmet-async";
 
 
 function Products() {
@@ -24,7 +25,14 @@ function Products() {
   }, []);
 
   return (
+  
     <div className="productsWrap">
+        <Helmet>
+      <title>Snaga Prirode | Proizvodi</title>
+      <meta name="description" content="OPG Snaga prirode" />
+      
+      <meta name="keywords" content="farma, opg, snaga prirode, domaće, voće, melemi, sokovi, sadnice, plodovi" />
+      </Helmet>
       <div className="productsDecoration">
         <motion.img
           src={require("../images/products.jpg")}

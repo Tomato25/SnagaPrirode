@@ -3,6 +3,7 @@ import "./Contact.css";
 import Logo from "../images/Logo.png";
 import {motion} from "framer-motion"
 import PageContext from "../context/PageContext";
+import { Helmet } from "react-helmet-async";
 
 import {
   textAnimCon,
@@ -26,6 +27,12 @@ useEffect (()=> {
 
   return (
       <div className="contactWrap">
+        <Helmet>
+      <title>Snaga Prirode | Kontakt</title>
+      <meta name="description" content="OPG Snaga prirode" />
+      
+      <meta name="keywords" content="farma, opg, snaga prirode, domaće, voće, melemi, sokovi, sadnice, plodovi" />
+      </Helmet>
         <div className="contactLeftCol"
         variants={textAnimCon}
         initial="hidden"

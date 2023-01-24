@@ -6,6 +6,7 @@ import imagesData from "../galleryimages";
 import { motion } from "framer-motion";
 import { imgAnimitem } from "../animations/productAnimations";
 import PageContext from "../context/PageContext";
+import { Helmet } from "react-helmet-async";
 
 function Gallery() {
 
@@ -23,6 +24,12 @@ useEffect (()=> {
 
   return (
     <div style={{ overflow: "hidden" }}>
+      <Helmet>
+      <title>Snaga Prirode | Galerija</title>
+      <meta name="description" content="OPG Snaga prirode" />
+      
+      <meta name="keywords" content="farma, opg, snaga prirode, domaće, voće, melemi, sokovi, sadnice, plodovi" />
+      </Helmet>
       <motion.div
         className="galleryWrap"
         variants={imgAnimitem}

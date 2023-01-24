@@ -14,7 +14,7 @@ function Accordion(props) {
   return (
     <div className="benefitsAccordion">
       <div className="benefitsAccordionTitle">
-        <h4 onClick={toggler}>Pomaže kod</h4>
+        <h4 onClick={toggler}>Djeluje kao</h4>
         <svg
           onClick={toggler}
           xmlns="http://www.w3.org/2000/svg"

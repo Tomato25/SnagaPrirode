@@ -8,6 +8,7 @@ import {
   logoAnim
 } from "../animations/aboutAnimations";
 import PageContext from "../context/PageContext";
+import { Helmet } from "react-helmet-async";
 
 function About() {
 
@@ -26,6 +27,12 @@ useEffect (()=> {
 
   return (
     <div className="aboutWrap">
+      <Helmet>
+      <title>Snaga Prirode | O nama</title>
+      <meta name="description" content="OPG Snaga prirode" />
+      
+      <meta name="keywords" content="farma, opg, snaga prirode, domaće, voće, melemi, sokovi, sadnice, plodovi" />
+      </Helmet>
       <motion.div
         className="leftCol"
         variants={textAnimCon}
