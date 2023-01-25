@@ -12,7 +12,7 @@ function ProductSplide(props) {
 
 
   let Slides = 2;
-  if (product.images.length == 1 || screenSize.dynamicWidth < 1100) {
+  if (product.images.length == 1 || screenSize.dynamicWidth < 1550) {
     Slides = 1
   } else if (product.images.length == 2) {
     Slides = 2
@@ -29,6 +29,8 @@ function ProductSplide(props) {
         drag: "free",
         arrows: false,
         useScroll: true,
+        snap: "true",
+
       }}
     >
       {product.images.map((image, index) => {

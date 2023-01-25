@@ -14,8 +14,11 @@ function Accordion(props) {
   return (
     <div className="benefitsAccordion">
       <div className="benefitsAccordionTitle">
-        <h4 onClick={toggler}>Pomaže kod</h4>
-        <svg
+        <motion.p onClick={toggler} whileHover={{
+              scale: 1.05,
+            }}
+            whileTap={{ scale: 0.9 }}>Pomaže kod</motion.p>
+        <motion.svg
           onClick={toggler}
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-chevron-down"
@@ -27,10 +30,14 @@ function Accordion(props) {
           fill="none"
           stroke-linecap="round"
           stroke-linejoin="round"
+          whileHover={{
+            scale: 1.05,
+          }}
+          whileTap={{ scale: 0.9 }}
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <polyline points="6 9 12 15 18 9" />
-        </svg>
+        </motion.svg>
       </div>
       {accordionToggle && (
         <AnimatePresence mode="wait">

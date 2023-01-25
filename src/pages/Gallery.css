@@ -4,6 +4,7 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        height: 84vh;
 }
 
 .galleryCoursel {
@@ -44,33 +45,9 @@
     display: flex;
 }
 
-.splide__pagination__page {
-  border-radius: 0 !important;
-  width:80px !important;
-}
-
-.splide__pagination__page {
-  border-radius: 2px !important;
-  width:60px !important;
-  height: 5px !important;
-}
 
 .splide__pagination__page.is-active {
   background: black !important;
   opacity: 1  !important;
   transform: scale(1.2)  !important;
-}
-
-.splide__pagination {
-  gap:0.5rem
-}
-
-.splide__arrow {
-    background: none !important;
-}
-
-.splide__arrow svg {
-    height: 2.5rem !important;
-    width: 2.5rem !important;
-
 }

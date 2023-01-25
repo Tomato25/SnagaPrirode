@@ -16,8 +16,10 @@
     align-items: center;
     margin-top: 1rem;
     letter-spacing: 5px;
-    font-size: 1rem;
-    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    font-family: "Akaya Telivigala", cursive;
+    color: rgba(66, 66, 66, 0.685);
+
 
 }
 
@@ -44,9 +46,14 @@
 
 .footer-nav-link {
     text-decoration: none;
-    color: black;
+    color: rgba(66, 66, 66, 0.486);
     font-family: "Akaya Telivigala", cursive;
     font-size: 1rem;
+}
+
+.footer-nav-link:hover {
+    color: rgba(27, 27, 27, 0.877);
+
 }
 
 .footerLinks {
@@ -68,7 +75,6 @@
 
     .footer-nav-link {
         font-size: 0.7rem;
-
 
     }
 

@@ -11,7 +11,7 @@ function Footer() {
       {location.pathname !== "/" && (
       <div className="footerCon">
         <div className="subtitle">
-          <h1>"Život u skladu s prirodom"</h1>
+          <p>"Život u skladu s prirodom"</p>
         </div>
 
         <div className="footerLinks">
@@ -20,7 +20,7 @@ function Footer() {
             className="footer-nav-link"
             activeClassName="footer-nav-link-active"
           >
-            Pocetna
+            Početna
           </NavLink>
           <NavLink
             to="/products"

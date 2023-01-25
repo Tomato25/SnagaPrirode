@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   font-family: "Akaya Telivigala", cursive;
-  height: 100vh;
+  height: 84vh;
 }
 
 .description {
@@ -21,7 +21,7 @@
   
   .gallery {
     width: 50%;
-    height:92vh;
+    height:84vh;
     display: flex;
     align-items:center;
     position: sticky;

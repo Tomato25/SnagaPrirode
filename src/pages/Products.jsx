@@ -63,6 +63,10 @@ function Products() {
             <motion.div
               variants={item}
               exit={{ y: 1000, opacity: 0, transition: { duration: 1 } }}
+              whileHover={{
+                scale: 1.1,
+              }}
+              whileTap={{ scale: 0.9 }}
             >
               <NavLink
                 key={index}

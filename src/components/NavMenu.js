@@ -10,7 +10,7 @@ import "./NavMenu.css";
 
 function NavMenu() {
   const Links = [
-    { name: "Pocetna", to: "/", state: "" },
+    { name: "Početna", to: "/", state: "" },
 
     { name: "O nama", to: "/about", state: "" },
 

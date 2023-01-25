@@ -104,7 +104,7 @@ function Home() {
             stroke="black"
           />
         </svg>
-        <motion.h2
+        <motion.p
           className="textSubtitle"
           variants={sentence}
           initial="hidden"
@@ -117,7 +117,7 @@ function Home() {
               </motion.span>
             );
           })}
-        </motion.h2>
+        </motion.p>
         <svg
           width="400"
           height="2"
