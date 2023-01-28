@@ -35,13 +35,9 @@ const productsData = [
           },
         ],
         imageFolder: "Jabuke",
-        images: [
-          { src: "jabuka1" },
-          { src: "jabuka2" },
-          { src: "jabuka3" },
-        ],
+        images: [{ src: "jabuka1" }, { src: "jabuka2" }, { src: "jabuka3" }],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
 
         benefits: [],
       },
@@ -66,10 +62,9 @@ const productsData = [
           { src: "kruska4" },
           { src: "kruska5" },
           { src: "kruska6" },
-
         ],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
 
         benefits: [],
       },
@@ -79,14 +74,13 @@ const productsData = [
         description: [
           {
             paragraph:
-            "U nasadima trenutno imamo vinogradarske breskve. Krupne, sočne i ukusne breskve koje dozrijevaju krajem kolovoza. Osvajaju svačije nepce svojim sokom, jednostavno prefine!"
+              "U nasadima trenutno imamo vinogradarske breskve. Krupne, sočne i ukusne breskve koje dozrijevaju krajem kolovoza. Osvajaju svačije nepce svojim sokom, jednostavno prefine!",
           },
-         
         ],
         imageFolder: "Breskve",
         images: [{ src: "breskva1" }],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
 
         benefits: [],
       },
@@ -105,7 +99,7 @@ const productsData = [
         imageFolder: "Orasi",
         images: [{ src: "orasi1" }, { src: "orasi2" }],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
 
         benefits: [],
       },
@@ -157,7 +151,7 @@ const productsData = [
           { src: "kaktus11" },
         ],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
         benefits: [],
       },
       {
@@ -190,7 +184,7 @@ const productsData = [
           { src: "sukulent16" },
         ],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
         benefits: [],
       },
       {
@@ -202,14 +196,15 @@ const productsData = [
               " Sadnice ružmarina koje uzgajamo iz reznica i iz sjemena. Raznih vrsta, vrlo otpornih na niske temperature i snijeg.",
           },
           {
-            paragraph: " Odlični za ukrasiti svačiju okućnicu, koliko izgledom toliko i mirisom. Također odličan i vrlo ukusan začin.",
+            paragraph:
+              " Odlični za ukrasiti svačiju okućnicu, koliko izgledom toliko i mirisom. Također odličan i vrlo ukusan začin.",
           },
         ],
         imageFolder: "Ruzmarin",
 
         images: [{ src: "ruzmarin1" }, { src: "ruzmarin2" }],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
 
         benefits: [],
       },
@@ -218,13 +213,14 @@ const productsData = [
         name: "Lavanda",
         description: [
           {
-            paragraph: "Prekrasne sadnice za Vašu okućnicu, balkon ili prozor. Svojim cvjetovima i mirisom ukrašava svaki prostor. Vrlo korisna kao čaj i zaštita za Vašu odjeću.",
+            paragraph:
+              "Prekrasne sadnice za Vašu okućnicu, balkon ili prozor. Svojim cvjetovima i mirisom ukrašava svaki prostor. Vrlo korisna kao čaj i zaštita za Vašu odjeću.",
           },
         ],
         imageFolder: "Lavanda",
         images: [{ src: "lavanda1" }],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
         benefits: [],
       },
     ],
@@ -249,7 +245,7 @@ const productsData = [
         description: [],
         imageFolder: "",
         images: [],
-        actsAs:[],
+        actsAs: [],
         benefits: [],
         ingredients: [],
       },
@@ -291,7 +287,7 @@ const productsData = [
             paragraph: "Dostupan je u pakiranjima od: 7ml, 30ml i 50ml.",
           },
         ],
-        actsAs:[],
+        actsAs: [],
 
         ingredients: [
           { ingredient: "kokosovo ulje" },
@@ -309,15 +305,22 @@ const productsData = [
           { benefit: "zacjeljivanja ožiljaka", id: "5" },
           { benefit: "opekotina", id: "6" },
           { benefit: "seboreje", id: "7" },
-          { benefit: "psorijaze" , id: "8"},
+          { benefit: "psorijaze", id: "8" },
           { benefit: "neurodermatitisa", id: "9" },
-          { benefit: "raznih herpesa" , id: "10"},
+          { benefit: "raznih herpesa", id: "10" },
           { benefit: "ožiljaka od alergija", id: "11" },
           { benefit: "ugriza kukaca", id: "12" },
           { benefit: "još mnogo toga, popis se stalno povećava!", id: "13" },
         ],
-        imageFolder: "Melemi",
-        images: [{ src: "melem1" }, { src: "melem2" }],
+        imageFolder: "MelemOriginal",
+        images: [
+          { src: "melemoriginal1" },
+          { src: "melemoriginal2" },
+          { src: "melemoriginal3" },
+          { src: "melemoriginal4" },
+          { src: "melemoriginal5" },
+          { src: "melemoriginal6" },
+        ],
       },
       {
         id: "2",
@@ -337,7 +340,6 @@ const productsData = [
           },
         ],
         ingredients: [
-          
           { ingredient: "kokosovo ulje" },
           { ingredient: "maslinovo ulje" },
           { ingredient: "konopljino ulje" },
@@ -345,11 +347,16 @@ const productsData = [
           { ingredient: "ulje bijelog bora" },
           { ingredient: "pčelinji vosak" },
         ],
-        actsAs:[],
+        actsAs: [],
 
         benefits: [],
-        imageFolder: "Melemi",
-        images: [{ src: "melem3" }, { src: "melem4" }],
+        imageFolder: "MelemExtra",
+        images: [
+          { src: "melem1" },
+          { src: "melem2" },
+          { src: "melem3" },
+          { src: "melem4" },
+        ],
       },
       {
         id: "3",
@@ -374,10 +381,15 @@ const productsData = [
           { ingredient: "pčelinji vosak" },
         ],
         benefits: [],
-        actsAs:[],
+        actsAs: [],
 
-        imageFolder: "Melemi",
-        images: [{ src: "melem5" }, { src: "melem6" }],
+        imageFolder: "MelemBaby",
+        images: [
+          { src: "melem5" },
+          { src: "melem6" },
+          { src: "melem7" },
+          { src: "melem8" },
+        ],
       },
       {
         id: "4",
@@ -395,7 +407,7 @@ const productsData = [
             paragraph: "Dostupan je u pakiranjima od: 50ml i 100ml.",
           },
         ],
-        actsAs:[],
+        actsAs: [],
 
         ingredients: [
           { ingredient: "svježi korijen gaveza" },
@@ -416,10 +428,16 @@ const productsData = [
           { benefit: "prijeloma kostiju", id: "8" },
           { benefit: "zarastanja rana", id: "9" },
           { benefit: "čireva", id: "10" },
-          { benefit: "reume" , id: "11"},
+          { benefit: "reume", id: "11" },
         ],
-        imageFolder: "Melemi",
-        images: [{ src: "melem7" }, { src: "melem8" }],
+        imageFolder: "MelemGavez",
+        images: [
+          { src: "melemgavez1" },
+          { src: "melemgavez2" },
+          { src: "melemgavez3" },
+          { src: "melemgavez4" },
+          { src: "melemgavez5" },
+        ],
       },
     ],
   },
@@ -465,7 +483,7 @@ const productsData = [
           },
         ],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
 
         benefits: [
           { benefit: "pomaže kod astme i alergije" },
@@ -496,7 +514,7 @@ const productsData = [
           },
         ],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
 
         benefits: [
           { benefit: "nesanice" },
@@ -506,8 +524,12 @@ const productsData = [
           { benefit: "menstrualnih tegoba" },
           { benefit: "problema s kožom i kosom" },
         ],
-        imageFolder: [],
-        images: [],
+        imageFolder: "Kamilica",
+        images: [
+          { src: "kamilica1" },
+          { src: "kamilica2" },
+          { src: "kamilica3" },
+        ],
       },
       {
         id: "3",
@@ -529,7 +551,7 @@ const productsData = [
           },
         ],
         ingredients: [],
-        actsAs:[],
+        actsAs: [],
         benefits: [
           { benefit: "jača imunitet" },
           { benefit: "smanjuje upale" },
@@ -542,8 +564,13 @@ const productsData = [
           { benefit: "pomaže kod hemeroida i šećerne bolesti" },
           { benefit: "čisti organizam" },
         ],
-        imageFolder: [],
-        images: [],
+        imageFolder: "TravaIva",
+        images: [
+          { src: "travaiva1" },
+         
+          { src: "travaiva4" },
+          { src: "travaiva5" },
+        ],
       },
       {
         id: "4",
@@ -562,7 +589,7 @@ const productsData = [
           },
         ],
         ingredients: [],
-        actsAs:[
+        actsAs: [
           { benefit: "antireumatik" },
           { benefit: "antiseptik" },
           { benefit: "antikoagulans" },
@@ -583,10 +610,9 @@ const productsData = [
           { benefit: "nesanice i migrene" },
           { benefit: "stimuliranja seksualne želje" },
           { benefit: "anemije" },
-          
         ],
-        imageFolder: [],
-        images: [],
+        imageFolder: "Timijan",
+        images: [ { src: "timijan2" }, { src: "timijan3" }],
       },
     ],
   },

@@ -27,7 +27,7 @@
 .products-nav-link {
     text-decoration: none;
     color: black;
-    font-family: "Akaya Telivigala", cursive;
+    font-family: 'Sniglet', cursive;
     margin: 5rem 0 5rem 0;
     font-size: 1.5rem;
 
@@ -64,7 +64,6 @@
 .products-nav-link {
     text-decoration: none;
     color: black;
-    font-family: "Akaya Telivigala", cursive;
     margin: 0 auto;
     font-size: 1.5rem;
 }

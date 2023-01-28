@@ -17,7 +17,7 @@
     margin-top: 1rem;
     letter-spacing: 5px;
     font-size: 1.5rem;
-    font-family: "Akaya Telivigala", cursive;
+    font-family: 'Sniglet', cursive;
     color: rgba(66, 66, 66, 0.685);
 
 
@@ -38,7 +38,7 @@
     justify-content: center;
     gap:4rem;
     align-items: center;
-    font-family: "Akaya Telivigala", cursive;
+    font-family: 'Sniglet', cursive;
     font-size: 1rem;
     box-sizing: border-box;
 
@@ -47,7 +47,7 @@
 .footer-nav-link {
     text-decoration: none;
     color: rgba(66, 66, 66, 0.486);
-    font-family: "Akaya Telivigala", cursive;
+    font-family: 'Sniglet', cursive;
     font-size: 1rem;
 }
 

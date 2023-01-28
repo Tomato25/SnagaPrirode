@@ -12,7 +12,7 @@
 .nav-link {
     text-decoration: none;
     color: black;
-    font-family: "Akaya Telivigala", cursive;
+    font-family: 'Sniglet', cursive;
     overflow-y: hidden;
     height: fit-content;
 
@@ -24,8 +24,8 @@
 }
 
 .btn-one {
-    font-family: "Akaya Telivigala", cursive;
-    color: black;
+  font-family: 'Sniglet', cursive;
+  color: black;
     transition: all 0.3s;
     position: relative;
   }

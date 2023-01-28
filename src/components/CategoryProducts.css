@@ -24,7 +24,7 @@
     justify-content: space-between;
     gap:3rem;
   text-align: center;
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Sniglet', cursive;
   font-size: 3rem;
   grid-area: title;
 }
@@ -36,7 +36,7 @@
   font-size: 1.3rem;
   margin: 1.5rem;
   color: rgb(43, 43, 43);
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Sniglet', cursive;
   white-space: pre-line;
   vertical-align: bottom;
 }

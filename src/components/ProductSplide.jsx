@@ -12,9 +12,9 @@ function ProductSplide(props) {
 
 
   let Slides = 2;
-  if (product.images.length == 1 || screenSize.dynamicWidth < 1550) {
+  if (product.images.length === 1 || screenSize.dynamicWidth < 1550) {
     Slides = 1
-  } else if (product.images.length == 2) {
+  } else if (product.images.length === 2) {
     Slides = 2
   }
 

@@ -31,7 +31,7 @@
 .textSubtitle {
   color: black;
   font-size: 2rem;
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Sniglet', cursive;
   letter-spacing: 6px;
   text-align: center;
 }
@@ -79,8 +79,8 @@
 .home-nav-link {
   text-decoration: none;
   color: black;
-  font-family: "Akaya Telivigala", cursive;
-    letter-spacing: 4px;
+  font-family: 'Sniglet', cursive;
+  letter-spacing: 4px;
   margin: none;
   font-size: 2rem;
   white-space: nowrap;
@@ -121,7 +121,6 @@
   .home-nav-link {
     text-decoration: none;
     color: black;
-    font-family: "Akaya Telivigala", cursive;
     margin: 0 auto;
     font-size: 1.5rem;
   }
@@ -157,8 +156,7 @@
   .home-nav-link {
     text-decoration: none;
     color: black;
-    font-family: "Akaya Telivigala", cursive;
-    margin: 0 auto;
+   margin: 0 auto;
     font-size: 1.5rem;
   }
 }
