@@ -16,6 +16,7 @@ import { PageProvider } from "../context/PageContext";
 import { Helmet } from "react-helmet-async";
 import Logo from "../images/LogoVector.svg"
 import ScrollToTop from "../ScrollToTop";
+import NavbarHideOnScroll from "../NavbarHideOnScroll";
 
 function Pages() {
 
