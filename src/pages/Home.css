@@ -32,7 +32,7 @@
   color: black;
   font-size: 2rem;
   font-family: 'Baloo Tamma 2', cursive;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   text-align: center;
 }
 
@@ -80,7 +80,7 @@
   text-decoration: none;
   color: black;
   font-family: 'Baloo Tamma 2', cursive;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   margin: none;
   font-size: 2rem;
   white-space: nowrap;
