@@ -95,6 +95,7 @@
   .wrapper {
     width: 100vw;
     height: max-content;
+    overflow-x: hidden;
   }
 
   .title {
@@ -130,6 +131,8 @@
   .wrapper {
     width: 100vw;
     height: max-content;
+    overflow-x: hidden;
+
   }
 
   .imgCon {
