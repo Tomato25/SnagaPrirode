@@ -38,7 +38,7 @@
     justify-content: center;
     gap:4rem;
     align-items: center;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Baloo Tamma 2', cursive;
     font-size: 1rem;
     box-sizing: border-box;
 
@@ -47,7 +47,8 @@
 .footer-nav-link {
     text-decoration: none;
     color: rgba(66, 66, 66, 0.486);
-    font-family: 'Sniglet', cursive;
+    font-family: 'Baloo Tamma 2', cursive;
+
     font-size: 1rem;
 }
 
