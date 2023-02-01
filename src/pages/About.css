@@ -75,7 +75,7 @@ hr {
     width: 100vw;
     height: max-content;
     flex-direction: column-reverse;
-    gap:5rem;
+    gap:3rem;
     overflow-x: hidden;
     margin:0 auto;
 }
