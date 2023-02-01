@@ -14,6 +14,7 @@ function Gallery() {
   const { currentPage } = useContext(PageContext);
   const { setCurrentPage } = useContext(PageContext);
   const pageName = "Galerija";
+  const imagesDatas =imagesData ;
 
   
 useEffect (()=> {
@@ -50,7 +51,7 @@ useEffect (()=> {
             snap: "true",
           }}
         >
-          {imagesData.map((image, index) => {
+          {imagesDatas.map((image, index) => {
             return (
               <SplideSlide key={index} className="galleryCard">
                 <div className="slide">
