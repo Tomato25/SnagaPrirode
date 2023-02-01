@@ -22,6 +22,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 10rem;
+    margin-bottom: 8rem;
 }
 
 .products-nav-link {
@@ -38,6 +39,22 @@
     text-decoration:underline;
 }
 
+
+@media (max-width: 1100px) {
+    
+  .products-nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:0.5rem; 
+     min-height: 40vh;
+     margin-bottom: 2rem;
+     margin-top: 5rem;
+
+}
+
+}
 
 
 @media (max-width: 700px) {
