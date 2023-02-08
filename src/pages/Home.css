@@ -116,7 +116,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
+    gap: 2.5rem;
+    margin-top: 3rem;
   }
 
   .home-nav-link {
@@ -153,8 +154,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
-  }
+    gap: 2.5rem;
+    margin-top: 3rem;}
 
   .home-nav-link {
     text-decoration: none;

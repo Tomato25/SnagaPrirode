@@ -47,7 +47,7 @@ useEffect (()=> {
             drag: "free",
             arrows: true,
             pagination: false,
-            type: "loop",
+            type: "slide",
             snap: "true",
           }}
         >

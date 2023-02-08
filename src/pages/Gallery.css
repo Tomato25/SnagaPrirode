@@ -5,13 +5,14 @@
         justify-content: center;
         overflow: hidden;
         height: 84vh;
+        width: 80%;
 }
 
 .galleryCoursel {
     max-width: 95vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
     margin-top: 2rem;

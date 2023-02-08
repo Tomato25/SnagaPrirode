@@ -47,14 +47,19 @@ const {toggler} = useContext(MenuContext);
               className="linkCon"
               variants={item}
               exit={{ y: -100, opacity: 0}}
+              whileHover={{
+                scale: 1.1,
+              }}
+              whileTap={{ scale: 0.9 }}
             >
               <NavLink
                 to={link.to}
                 className="btn-one"
                 activeClassName="nav-link-active"
+                
                 onClick={() => toggler(toggle)}
               >
-                <motion.p>{link.name}</motion.p>
+                <motion.p >{link.name}</motion.p>
               </NavLink>
               <div className="underline">
 
