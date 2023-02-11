@@ -23,18 +23,18 @@ function Footer() {
             Početna
           </NavLink>
           <NavLink
-            to="/products"
-            className="footer-nav-link"
-            activeClassName="footer-nav-link-active"
-          >
-            Proizvodi
-          </NavLink>
-          <NavLink
             to="/about"
             className="footer-nav-link"
             activeClassName="footer-nav-link-active"
           >
             O nama
+          </NavLink>
+          <NavLink
+            to="/products"
+            className="footer-nav-link"
+            activeClassName="footer-nav-link-active"
+          >
+            Proizvodi
           </NavLink>
           <NavLink
             to="/gallery"

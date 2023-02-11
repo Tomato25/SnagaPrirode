@@ -114,7 +114,7 @@ const productsData = [
       },
       {
         paragraph:
-          "U ponudi imamo sadnice različitih veličina i starosti. Sve u ponudi uzgajamo i zasebe, u našem vrtu i za ukrašavanje okućnice, tako da za svaku kupljenu sadnicu možete dobiti uputstva za daljnju njegu, brigu i uzgoj biljke iz vlastitog iskustva.",
+          "U ponudi imamo sadnice različitih veličina i starosti. Sve u ponudi uzgajamo i za sebe, u našem vrtu i za ukrašavanje okućnice, tako da za svaku kupljenu sadnicu možete dobiti uputstva za daljnju njegu, brigu i uzgoj biljke iz vlastitog iskustva.",
       },
       {
         paragraph:
@@ -494,8 +494,8 @@ const productsData = [
           { benefit: "potpomaže mršavljenju" },
           { benefit: "ublažava stres i nesanicu" },
         ],
-        imageFolder: [],
-        images: [],
+        imageFolder: "Menta",
+        images: [{ src: "menta1" }, { src: "menta2" }],
       },
       {
         id: "2",
@@ -567,7 +567,7 @@ const productsData = [
         imageFolder: "TravaIva",
         images: [
           { src: "travaiva1" },
-         
+
           { src: "travaiva4" },
           { src: "travaiva5" },
         ],
@@ -612,7 +612,7 @@ const productsData = [
           { benefit: "anemije" },
         ],
         imageFolder: "Timijan",
-        images: [ { src: "timijan2" }, { src: "timijan3" }],
+        images: [{ src: "timijan2" }, { src: "timijan3" }],
       },
     ],
   },
