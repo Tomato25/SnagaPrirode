@@ -21,7 +21,6 @@ function Products() {
 
   useEffect(() => {
     setCurrentPage(pageName);
-    console.log(currentPage);
   }, []);
 
   return (
@@ -62,6 +61,7 @@ function Products() {
           return (
             <motion.div
               variants={item}
+              key={index}
               exit={{ y: 1000, opacity: 0, transition: { duration: 1 } }}
               whileHover={{
                 scale: 1.1,
@@ -72,9 +72,7 @@ function Products() {
                 key={index}
                 to="/products/product"
                 state={{ data: product }}
-                className="products-nav-link"
-                activeClassName="nav-link-active"
-              >
+                className="products-nav-link"              >
                 <p>{product.category}</p>
               </NavLink>
             </motion.div>

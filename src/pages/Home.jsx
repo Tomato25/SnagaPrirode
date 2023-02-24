@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
 import Logo from "../images/Logo.png";
-import { Link, NavLink } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { NavLink } from "react-router-dom";
+import { motion} from "framer-motion";
 import {
   container, item,
   sentence,
@@ -142,7 +142,7 @@ function Home() {
       >
         {Links.map((link, index) => {
           return (
-            <motion.div style={{ overflow: "hidden" }} variants={item}
+            <motion.div style={{ overflow: "hidden" }} key={index} variants={item}
             whileHover={{
               scale: 1.1,
             }}
@@ -152,7 +152,6 @@ function Home() {
               key={index}
               to={link.to}
               className="home-nav-link"
-              activeClassName="nav-link-active"
             ><motion.p
             variants={linkanime}
             initial="hidden"

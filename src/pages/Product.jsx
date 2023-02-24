@@ -12,14 +12,11 @@ function Product() {
   
 useEffect (()=> {
   setCurrentPage(pageName);
-  console.log(currentPage)
 }, [])
 
 
 
   const location=useLocation();
-  console.log(location.state.data);
-
   
 const data=location.state.data;
 const { currentPage } = useContext(PageContext);

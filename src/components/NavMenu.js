@@ -1,4 +1,4 @@
-import { React,useContext,useState } from "react";
+import { React,useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -20,8 +20,6 @@ function NavMenu() {
 
     { name: "Kontakt", to: "/contact", state: "" },
   ];
-
-  const [selectedTab, setSelectedTab] = useState(Links[0]);
 
 const {toggle} = useContext(MenuContext);
 const {toggler} = useContext(MenuContext);
@@ -54,9 +52,7 @@ const {toggler} = useContext(MenuContext);
             >
               <NavLink
                 to={link.to}
-                className="nav-link"
-                activeClassName="nav-link-active"
-                
+                className="nav-link"                
                 onClick={() => toggler(toggle)}
               >
                 <motion.p >{link.name}</motion.p>
