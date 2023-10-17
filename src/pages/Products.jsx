@@ -70,9 +70,8 @@ function Products() {
             >
               <NavLink
                 key={index}
-                to="/products/product"
-                state={{ data: product }}
-                className="products-nav-link"              >
+                to={`/products/${product.id}`}
+                className="products-nav-link" >
                 <p>{product.category}</p>
               </NavLink>
             </motion.div>

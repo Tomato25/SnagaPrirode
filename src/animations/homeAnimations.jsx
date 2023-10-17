@@ -91,18 +91,23 @@ export const linkanime = {
     visible: {
       opacity: 1,
       transition: {
-        delayChildren: 2,
-        staggerChildren: 0.08,
-        duration: 1,
+        delayChildren: 1,
+        staggerChildren: 1,
+        duration: 5,
       },
     },
   };
   
   export const letters = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 1, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
+      transition: {
+        delayChildren: 1,
+        staggerChildren: 1,
+        duration: 5,
+      },
     },
   };
 

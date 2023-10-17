@@ -19,7 +19,3 @@ export const Links = [
     to: "/contact",
     state:""},
 ]
-
-export const porductList = [
-
-]

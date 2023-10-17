@@ -1,27 +1,25 @@
 import {React, useContext,useEffect} from "react";
 import CategoryProducts from "../components/CategoryProducts";
+import productData from "../productsData";
 import Category from "../components/Category";
 import "./Product.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import PageContext from "../context/PageContext";
 import { Helmet } from "react-helmet-async";
 
 function Product() {
-
-
-  
 useEffect (()=> {
   setCurrentPage(pageName);
 }, [])
 
+const {id} = useParams();
+console.log(id)
 
+const product = productData.find(product => product.id === id); 
+console.log(product)
 
-  const location=useLocation();
-  
-const data=location.state.data;
-const { currentPage } = useContext(PageContext);
 const { setCurrentPage } = useContext(PageContext);
-const pageName = data.category;
+const pageName = product.category;
   return (
 
     <div className="productWrap">
@@ -31,8 +29,8 @@ const pageName = data.category;
       
       <meta name="keywords" content="farma, opg, snaga prirode, domaće, voće, melemi, sokovi, sadnice, plodovi" />
       </Helmet>
-      <Category data={location.state.data}/>
-      <CategoryProducts data={location.state.data}/>
+      <Category data={product}/>
+      <CategoryProducts data={product}/>
     </div>
   );
 }

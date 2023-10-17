@@ -1,5 +1,6 @@
 const productsData = [
   {
+    id:"1",
     category: "Voće i orašasti plodovi",
     categoryDescription: [
       {
@@ -107,6 +108,7 @@ const productsData = [
   },
 
   {
+    id:"2",
     category: "Sadnice",
     categoryDescription: [
       {
@@ -227,6 +229,7 @@ const productsData = [
   },
 
   {
+    id:"3",
     category: "Domaći sokovi",
     categoryDescription: [
       {
@@ -252,6 +255,7 @@ const productsData = [
     ],
   },
   {
+    id:"4",
     category: "Melemi",
     categoryDescription: [
       {
@@ -442,6 +446,7 @@ const productsData = [
     ],
   },
   {
+    id:"5",
     category: "Ljekovito bilje i čajevi",
     categoryDescription: [
       {

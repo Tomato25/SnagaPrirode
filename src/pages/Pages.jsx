@@ -32,7 +32,7 @@ function Pages() {
               <Routes  location={location}  key={location.pathname}>
                 <Route   path="/" exact element={<Home />} />
                 <Route  path="/products" element={<Products />} />
-                <Route  path="/products/product" element={<Product />} />
+                <Route  path="/products/:id" element={<Product />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/about" element={<About />} />
                 <Route  path="/gallery" element={<Gallery />} />

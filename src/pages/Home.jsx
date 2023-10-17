@@ -73,7 +73,7 @@ function Home() {
           animate="visible"
           viewport={{ once: true }}
 
-          exit={{ x: -4300, opacity: 0, transition:{ duration:0.5 }}}
+          exit={{ x: -4300, opacity: 0, transition:{ duration:1 }}}
 
           src={require("../images/background.jpg")}
           className="bgimages"
