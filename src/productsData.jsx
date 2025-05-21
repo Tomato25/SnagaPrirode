@@ -675,8 +675,8 @@ paragraph:
           { benefit: "umiruje probavne tegobe i pomaže u ublažavanju nadutosti i probavnih smetnji" },
           { benefit: "ubrzavanja procesa zacjeljivanja herpesa" },
         ],
-        imageFolder: "Matičnjak",
-        images: [{ src: "maticnjak1" }, { src: "maticnjak2" }],
+        imageFolder: "Maticnjak",
+        images: [{ src: "maticnjak1" }],
       },
 {
         id: "6",
