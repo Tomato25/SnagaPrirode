@@ -150,7 +150,16 @@ const productsData = [
           { src: "kaktus8" },
           { src: "kaktus9" },
           { src: "kaktus10" },
-          { src: "kaktus11" },
+          { src: "kaktus12" },
+          { src: "kaktus13" },
+          { src: "kaktus14" },
+          { src: "kaktus15" },
+          { src: "kaktus16" },
+          { src: "kaktus17" },
+          { src: "kaktus18" },
+          { src: "kaktus19" },
+          { src: "kaktus20" },
+          { src: "kaktus21" },
         ],
         ingredients: [],
         actsAs: [],
@@ -183,7 +192,19 @@ const productsData = [
           { src: "sukulent13" },
           { src: "sukulent14" },
           { src: "sukulent15" },
-          { src: "sukulent16" },
+          { src: "sukulent16"},
+            { src: "sukulent17" },
+            { src: "sukulent18" },
+            { src: "sukulent19" },
+            { src: "sukulent20" },
+            { src: "sukulent21" },
+            { src: "sukulent22" },
+            { src: "sukulent23" },
+          { src: "sukulent24" },
+          { src: "sukulent25" },
+          { src: "sukulent26" },
+          { src: "sukulent27" },
+          { src: "sukulent28" },
         ],
         ingredients: [],
         actsAs: [],
@@ -263,11 +284,11 @@ const productsData = [
       },
       {
         paragraph:
-          "Ručno izrađujemo vlastite meleme od najkvalitetnijih organskih sastojaka. 100% prirodni, veganski i bez dodataka.",
+          "Ručno izrađujemo vlastite meleme od najkvalitetnijih organskih sastojaka. 100% prirodni, vege i bez dodataka.",
       },
       {
         paragraph:
-          " U ponudi imamo:\nMelem Original – naš izvorni melem s kojim je sve krenulo :)\n Melem Extra – namjenjen za najteže slučajeve\nMelem Baby – posebno prilagođen za bebe i djecu\nMelem Gavez – naša veganska verzija gavezove masti",
+          " U ponudi imamo:\nMelem Original – naš izvorni melem s kojim je sve krenulo :)\n Melem Extra – namjenjen za najteže slučajeve \nMelem Gavez – naša vege verzija gavezove masti \nBalzam za usne – njega za usne prema originalnoj recepturi u dvije izvedbe: Original i Kakao",
       },
       {
         paragraph: "Sve izrađeno sa puno ljubavi!",
@@ -297,9 +318,10 @@ const productsData = [
           { ingredient: "kokosovo ulje" },
           { ingredient: "maslinovo ulje" },
           { ingredient: "konopljino ulje" },
+	         { ingredient: "pčelinji vosak" },
           { ingredient: "ružmarinovo ulje" },
           { ingredient: "ulje bijelog bora" },
-          { ingredient: "pčelinji vosak" },
+          
         ],
         benefits: [
           { benefit: "iritacije kože", id: "1" },
@@ -347,9 +369,10 @@ const productsData = [
           { ingredient: "kokosovo ulje" },
           { ingredient: "maslinovo ulje" },
           { ingredient: "konopljino ulje" },
+	  { ingredient: "pčelinji vosak" },
           { ingredient: "ružmarinovo ulje" },
           { ingredient: "ulje bijelog bora" },
-          { ingredient: "pčelinji vosak" },
+          
         ],
         actsAs: [],
 
@@ -362,53 +385,20 @@ const productsData = [
           { src: "melem4" },
         ],
       },
-      {
-        id: "3",
-        name: "Melem Baby",
-        description: [
-          {
-            paragraph:
-              "Melem koji izrađujemo posebno za naše najmlađe. Prilagođen recept za najosjetljiviju kožu od samo nekoliko posebno izabranih sastojaka. Posebno se lako nanosi na kožu zbog svoje prilagođene strukture.",
-          },
-          {
-            paragraph:
-              "Dubinski njeguje, obnavlja i štiti kožu. Namjenjen je za svakodnevnu uporabu. Može se nanositi na cijelo tijelo i može se koristiti za sve tipove kože.",
-          },
-          {
-            paragraph: "Dostupan je u pakiranjima od: 30ml, 50ml i 100ml.",
-          },
-        ],
-        ingredients: [
-          { ingredient: "kokosovo ulje" },
-          { ingredient: "maslinovo ulje" },
-          { ingredient: "konopljino ulje" },
-          { ingredient: "pčelinji vosak" },
-        ],
-        benefits: [],
-        actsAs: [],
-
-        imageFolder: "MelemBaby",
-        images: [
-          { src: "melem5" },
-          { src: "melem6" },
-          { src: "melem7" },
-          { src: "melem8" },
-        ],
-      },
-      {
+           {
         id: "4",
         name: "Melem Gavez",
         description: [
           {
             paragraph:
-              "100 % prirodan gavezov melem u veganskoj izvedbi. Ljekovita svojstva gaveza su poznata još od srednjeg vijeka, a danas su i znanstveno dokazana!",
+              "Vege verzija gavezove masti. Ljekovita svojstva gaveza su poznata još od srednjeg vijeka, a danas su i znanstveno dokazana!",
           },
           {
             paragraph:
               "Ubrzava rast i obnovu ozlijeđenih kostiju, te ima protuupalno djelovanje.",
           },
           {
-            paragraph: "Dostupan je u pakiranjima od: 50ml i 100ml.",
+            paragraph: "Dostupan je u pakiranjima od: 50ml",
           },
         ],
         actsAs: [],
@@ -417,9 +407,9 @@ const productsData = [
           { ingredient: "svježi korijen gaveza" },
           { ingredient: "kokosovo ulje" },
           { ingredient: "maslinovo ulje" },
+	  { ingredient: "pčelinji vosak" },
           { ingredient: "ulje mente" },
-
-          { ingredient: "pčelinji vosak" },
+          { ingredient: "ulje eukaliptusa" },
         ],
         benefits: [
           { benefit: "uganuća", id: "1" },
@@ -438,11 +428,51 @@ const productsData = [
         images: [
           { src: "melemgavez1" },
           { src: "melemgavez2" },
-          { src: "melemgavez3" },
           { src: "melemgavez4" },
           { src: "melemgavez5" },
+          { src: "melemgavez6" },
         ],
       },
+{
+        id: "5",
+        name: "Balzam za usne",
+        description: [
+          {
+            paragraph:
+              "Za njegu usana u ponudi imamo potpuno prirodni balzam za usne na bazi prirodnih maslaca, ulja i pčelinjeg voska. Recept za balzam je temeljen na melemu “Original” koji se pokazao jako učinkovit za njegu i regeneraciju suhih i ispucalih usana.",
+          },
+          {
+            paragraph:
+              "Za glatke i nježne usne balzam trenutno dolazi u dvije izvedbe: Original i Kokos Kakao.",
+          },
+          {
+            paragraph: "Dostupan je u pakiranju od 5ml.",
+          },
+{
+paragraph:
+          "Balzam za usne 'Original' - Sastojci: \n kokosovo ulje \n maslinovo ulje \n konopljino ulje \n pčelinji vosak \n ružmarinovo ulje \n ulje bijelog bora",
+      },
+{
+paragraph:
+          "Balzam za usne 'Kokos Kakao' - Sastojci: \n kokosovo ulje \n kakao maslac \n konopljino ulje \n pčelinji vosak  ",
+      },
+
+
+        ],
+        actsAs: [],
+
+        ingredients: [
+        
+        ],
+        benefits: [
+                 ],
+        imageFolder: "Balzami",
+        images: [
+          { src: "balzamzausne1" },
+          { src: "balzamzausne2" },
+        ],
+      },
+
     ],
   },
   {
@@ -477,14 +507,14 @@ const productsData = [
         description: [
           {
             paragraph:
-              "Čaj od mente, poznat još i kao čaj od nane, je vrlo poznat diljem svijeta već tisućama godina. Menta je višegodišnja biljka koja prirodno raste na područjima Europe i Azije. Metvica spada među čajeve koje bi uvijek trebalo imati kod kuće, jer dobro dođe kod različitih tegoba.",
+              "Čaj od mente, poznat još i kao čaj od nane, je vrlo poznat diljem svijeta već tisućama godina. Menta (lat. mentha) je višegodišnja biljka koja prirodno raste na područjima Europe i Azije. Metvica spada među čajeve koje bi uvijek trebalo imati kod kuće, jer dobro dođe kod različitih tegoba.",
           },
           {
             paragraph:
               "Sadrži visoku količinu mentola, koji je po mirisu čini prepoznatljivom među tisućama biljaka. Mentol aktivira receptore osjetljive na hladnoću u koži i sluznici tkiva, zbog čega se javlja osjećaj hlađenja, po kojemu je ova biljka prepoznatljiva. Jedno od primarnih svojstava metvice je ublažavanje stresa. Sadrži veće količine triptofana, od kojeg nastaje serotonin koji podiže raspoloženje.",
           },
           {
-            paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
+            paragraph: "Dostupna je u pakiranjima od: 50g i 100g.",
           },
         ],
         ingredients: [],
@@ -508,14 +538,14 @@ const productsData = [
         description: [
           {
             paragraph:
-              "Kamilica je dobro poznata biljka i dobar saveznik u borbi protiv različitih zdravstvenih tegoba. Raširena je po cijeloj Europi i Aziji, a raste samoniklo. Cvjetovi kamilice su ljekoviti i skupljaju se preko ljeta.",
+              "Kamilica (lat. matricaria chamomilla) je dobro poznata biljka i dobar saveznik u borbi protiv različitih zdravstvenih tegoba. Raširena je po cijeloj Europi i Aziji, a raste samoniklo. Cvjetovi kamilice su ljekoviti i skupljaju se preko ljeta.",
           },
           {
             paragraph:
               "Čaj od kamilice bogat je flavonoidima i seskviterpenima te ostalim antioksidansima koji imaju snažan pozitivan učinak na ljudski organizam.",
           },
           {
-            paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
+            paragraph: "Dostupna je u pakiranjima od: 50g i 100g.",
           },
         ],
         ingredients: [],
@@ -552,7 +582,7 @@ const productsData = [
               "Iako je manje poznata u široj javnosti, trava iva jedna je od najpouzdanijih ljekovitih biljaka. Jako je cijenjena u planinsko-brdskim krajevima, a kažu da liječi skoro sve teške bolesti!",
           },
           {
-            paragraph: "Dostupna je u pakiranjima od: 25g, 50g i 100g.",
+            paragraph: "Dostupna je u pakiranjima od: 50g i 100g.",
           },
         ],
         ingredients: [],
@@ -583,14 +613,14 @@ const productsData = [
         description: [
           {
             paragraph:
-              "Timijan je jedan od jeftinijih i svakome dostupnih lijekova. Njegove ljekovitost i hranjivost poznate su od davnina. Smatra se da je ova biljka podrijetlom s Mediterana, a danas je rasprostranjena po cijelom svijetu.",
+              "Timijan (lat. thymus vulgaris) je jedan od jeftinijih i svakome dostupnih lijekova. Njegove ljekovitost i hranjivost poznate su od davnina. Smatra se da je ova biljka podrijetlom s Mediterana, a danas je rasprostranjena po cijelom svijetu.",
           },
           {
             paragraph:
               "U njegovom su sastavu između ostalog borneol, karvakrol, timol, saponini, tanin, glikozidi, vitamini A, C, D, B-kompleks, magnezij, fosfor, kalij i cink.",
           },
           {
-            paragraph: "Dostupan je u pakiranjima od: 25g, 50g i 100g.",
+            paragraph: "Dostupan je u pakiranjima od: 50g i 100g.",
           },
         ],
         ingredients: [],
@@ -619,7 +649,117 @@ const productsData = [
         imageFolder: "Timijan",
         images: [{ src: "timijan2" }, { src: "timijan3" }],
       },
+{
+        id: "5",
+        name: "Matičnjak",
+        description: [
+          {
+            paragraph:
+              "Matičnjak (lat. melissa officinalis) je mirisna biljka iz porodice metvice, poznata po ugodnom mirisu i po raznim ljekovitim svojstvima.",
+          },
+          {
+            paragraph:
+              "Može se pohvaliti bogatim i raznolikim kemijskim sastavom koji podupire brojne zdravstvene dobrobiti: Ružmarinska kiselina, Citronelal, Luteolin, Kvercetin, Apigenin, Geraniol, Polifenoli, Triterpenoidi, Kavena kiselina, Ursolna kiselina, Kariofilen, Eugeno i brojne druge manje važne spojeve koji pridonose njegovom ukupnom kemijskom sastavu i učincima na zdravlje.",
+          },
+          {
+            paragraph: "Dostupan je u pakiranjima od: 50g i 100g.",
+          },
+        ],
+        ingredients: [],
+        actsAs: [],
+        benefits: [
+          { benefit: "smanjenja stresa i tjeskobe" },
+          { benefit: "poboljšava kvalitetu sna i ublažava nesanicu" },
+          { benefit: "borbe protiv oksidativnog stresa, štiti od oštećenja stanica i promiče opću dobrobit" },
+          { benefit: "poboljšava pamćenje i pažnju" },
+          { benefit: "umiruje probavne tegobe i pomaže u ublažavanju nadutosti i probavnih smetnji" },
+          { benefit: "ubrzavanja procesa zacjeljivanja herpesa" },
+        ],
+        imageFolder: "Matičnjak",
+        images: [{ src: "maticnjak1" }, { src: "maticnjak2" }],
+      },
+{
+        id: "6",
+        name: "Valerijana",
+        description: [
+          {
+            paragraph:
+              "Valerijana ili ljekoviti odoljen (lat. valeriana officinalis) se tradicionalno koristi za ublažavanje cijelog niza tegoba, a najčešći razlozi zbog kojih je ljudi uzimaju su problemi sa spavanjem, nervoza i tjeskoba.",
+          },
+          {
+            paragraph:
+              "Prema dosadašnjim istraživanjima, valerijana sadrži preko 150 aktivnih tvari koje djeluju u sinergiji. Osim eteričnog ulja, najvažniji među njima su valepotrijati, a prisutne su i slobodne aminokiseline, poput gama-aminobutirične kiseline (GABA). Pripravci valerijane povećavaju razinu GABA neurotransmitera u mozgu, što doprinosi smanjenju nervoze i održavanju normalnog sna, a valepotrijati imaju blago anksiolitičko djelovanje a pri tomu nemaju svojstvo izazivanja ovisnosti.",
+          },
+          {
+            paragraph: "Dostupan je u pakiranjima od: 50g i 100g.",
+          },
+        ],
+        ingredients: [],
+        actsAs: [],
+        benefits: [
+          { benefit: "uklanja napetost" },
+          { benefit: "pomaže kod nesanice i depresije" },
+          { benefit: "smiruje neurozu srca i želuca" },
+          { benefit: "ujednačuje srčane otkucaje" },
+          { benefit: "pojačava apetit" },
+          { benefit: "pojačava mokrenje" },
+	  { benefit: "čisti jetru, slezenu i žuč" },
+	{ benefit: "izbacuje žučni kamenac" },
+	{ benefit: "pomaže kod slabosti uslijed slabokrvnosti, menstruacijskih i klimakteričnih tegoba" },
+	{ benefit: "smetnji u disanju" },
+        ],
+        imageFolder: "Valerijana",
+        images: [{ src: "valerijana1" }, { src: "valerijana2" }],
+      },
     ],
+  },
+{
+    id:"6",
+    category: "Tinkture od ljekovitog bilja",
+    categoryDescription: [
+      {
+        paragraph:
+          "Tinkture su tekući alkoholni ekstrakti iz ljekovitih biljaka. One su vrlo učinkovite kao biljne kapi koje se uzimaju samostalno ili kao dodatak piću i hrani.",
+      },
+      {
+        paragraph: "Tinkture su puno jače i koncentriranije od čaja. samo 2-3 kapi tinkture jednake su, pa čak i jače od cijele jedne šalice čaja. Ljekoviti sastojci tinktura mogu se bolje probaviti i asimilirati nego same sirove biljke, te ulaze u krvotok brzo, gotovo momentalno.",
+      },
+{
+        paragraph: "Alkohol održava tinkturu i znatno produžava rok trajanja, gotovo na neograničeno vrijeme. Za osobe koje ne smiju ili ne žele konzumirati alkohol, svoju dozu tinkture ukapate u vrući čaj ili prelijete vrućom vodom, tako će alkohol u potpunosti ishlapiti, a ostat će svi ljekoviti sastojci.",
+      },
+{
+        paragraph: "Tinkture su puno jače i koncentriranije od čaja. samo 2-3 kapi tinkture jednake su, pa čak i jače od cijele jedne šalice čaja. Ljekoviti sastojci tinktura mogu se bolje probaviti i asimilirati nego same sirove biljke, te ulaze u krvotok brzo, gotovo momentalno.",
+      },
+{
+        paragraph: "Naše tinkture su izrađene sa premium pročišćenim 70% etilnim alkoholom od pažljivo odabranog biljnog materijala najbolje kvalitete. Jako koncentrirane!",
+      },
+{
+        paragraph: "Inspiracija za izradu tinktura nam je bila 'Trava Iva' i želja da tu biljku približno svima. Iz našeg dugogodišnjeg iskustva, 'Trava Iva' je jedna od, ako ne i najučinkovitija biljka za razne zdravstvene probleme. Kako je sam čaj od 'Trave Ive' jako gorak i većini nas, a naročito djeci, težak i ponekad nemoguć za piti, došli smo na ideju da napravimo biljnu tinkturu, kako bi u svega par kapljica unijeli šalicu čaja u organizam.",
+      },
+{
+        paragraph: "Tinkture su dostupne u pakiranjima: 30, 50 i 100ml",
+      },
+      {
+paragraph:
+          "Dostupne tinkture:\nMenta \nKamilica \nTrava Iva \nTimijan \nMatičnjak \nValerijana",
+      },
+
+    ],
+    categoryImage: "tinkture",
+    products: [
+      {
+        id: "",
+        name: "",
+        description: [],
+        imageFolder: "",
+        images: [],
+        actsAs: [],
+        benefits: [],
+        ingredients: [],
+      },
+    ],
+    imageFolder:"Tinkture",
+    images: [{ src: "tinktura1" }, { src: "tinktura2" }],
   },
 ];
 

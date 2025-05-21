@@ -52,7 +52,8 @@
 
 .bgimages {
   height: 95%;
-  width: 100%;
+  width: 1280px ;
+  margin: auto;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 6px 9px 9px;

@@ -13,7 +13,7 @@ function CategoryProducts(props) {
   const productData = props.data;
 
   return (
-    <div >
+    <div>
       {productData.products.map((product, index) => (
         <motion.div className="product" key={index}       initial="hidden"
         whileInView="visible"
