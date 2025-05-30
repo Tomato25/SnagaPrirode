@@ -8,3 +8,10 @@
     }
 
 }
+
+@media (max-width: 500px) {
+    .productWrap {
+        width: 100%;
+    }
+
+}

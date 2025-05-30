@@ -68,20 +68,30 @@ function CategoryProducts(props) {
             );
           })}
           {product.benefits.length > 0 ? (
-            <Accordion benefits={product.benefits}/>
+            <Accordion  benefits={product.benefits}/>
           ) : (
             <div></div>
           )}
           {product.actsAs.length > 0 ? (
-            <ActsAsAccordion benefits={product.actsAs}/>
+            <ActsAsAccordion  benefits={product.actsAs}/>
           ) : (
             <div></div>
           )}
-          {product.ingredients.length > 0 ? (
-            <IngredientsAccordion ingredients={product.ingredients}/>
-          ) : (
-            <div></div>
-          )}
+        {product.ingredients.length > 0 ? (
+  Array.isArray(product.ingredients[0]?.list) ? (
+    product.ingredients.map((group, i) => (
+      <IngredientsAccordion
+        key={i}
+        title={group.title}
+        ingredients={group.list.map((item) => ({ ingredient: item }))}
+      />
+    ))
+  ) : (
+    <IngredientsAccordion ingredients={product.ingredients} />
+  )
+) : (
+  <div></div>
+)}
           </div>
           {product.images.length > 0 ? (
             <ProductSplide className="productGallery" product={product} />

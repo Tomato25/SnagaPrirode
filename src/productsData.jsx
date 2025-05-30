@@ -342,10 +342,7 @@ const productsData = [
         images: [
           { src: "melemoriginal1" },
           { src: "melemoriginal2" },
-          { src: "melemoriginal3" },
-          { src: "melemoriginal4" },
-          { src: "melemoriginal5" },
-          { src: "melemoriginal6" },
+      
         ],
       },
       {
@@ -381,8 +378,7 @@ const productsData = [
         images: [
           { src: "melem1" },
           { src: "melem2" },
-          { src: "melem3" },
-          { src: "melem4" },
+
         ],
       },
            {
@@ -427,10 +423,7 @@ const productsData = [
         imageFolder: "MelemGavez",
         images: [
           { src: "melemgavez1" },
-          { src: "melemgavez2" },
-          { src: "melemgavez4" },
-          { src: "melemgavez5" },
-          { src: "melemgavez6" },
+          
         ],
       },
 {
@@ -443,27 +436,37 @@ const productsData = [
           },
           {
             paragraph:
-              "Za glatke i nježne usne balzam trenutno dolazi u dvije izvedbe: Original i Kokos Kakao.",
+              "Za glatke i nježne usne balzam trenutno dolazi u dvije izvedbe: Original i Kokos kakao.",
           },
           {
-            paragraph: "Dostupan je u pakiranju od 5ml.",
+            paragraph: "Dostupan je u pakiranju od 50ml.",
           },
-{
-paragraph:
-          "Balzam za usne 'Original' - Sastojci: \n kokosovo ulje \n maslinovo ulje \n konopljino ulje \n pčelinji vosak \n ružmarinovo ulje \n ulje bijelog bora",
-      },
-{
-paragraph:
-          "Balzam za usne 'Kokos Kakao' - Sastojci: \n kokosovo ulje \n kakao maslac \n konopljino ulje \n pčelinji vosak  ",
-      },
-
 
         ],
         actsAs: [],
 
         ingredients: [
-        
-        ],
+    {
+      title: "Balzam za usne 'Original'",
+      list: [
+        "kokosovo ulje",
+        "maslinovo ulje",
+        "konopljino ulje",
+        "pčelinji vosak",
+        "ružmarinovo ulje",
+        "ulje bijelog bora",
+      ],
+    },
+    {
+      title: "Balzam za usne 'Kokos kakao'",
+      list: [
+        "kokosovo ulje",
+        "kakao maslac",
+        "konopljino ulje",
+        "pčelinji vosak",
+      ],
+    },
+  ],
         benefits: [
                  ],
         imageFolder: "Balzami",
@@ -688,7 +691,7 @@ paragraph:
           },
           {
             paragraph:
-              "Prema dosadašnjim istraživanjima, valerijana sadrži preko 150 aktivnih tvari koje djeluju u sinergiji. Osim eteričnog ulja, najvažniji među njima su valepotrijati, a prisutne su i slobodne aminokiseline, poput gama-aminobutirične kiseline (GABA). Pripravci valerijane povećavaju razinu GABA neurotransmitera u mozgu, što doprinosi smanjenju nervoze i održavanju normalnog sna, a valepotrijati imaju blago anksiolitičko djelovanje a pri tomu nemaju svojstvo izazivanja ovisnosti.",
+              "Prema dosadašnjim istraživanjima, valerijana sadrži preko 150 aktivnih tvari koje djeluju u sinergiji. Osim eteričnog ulja, najvažniji među njima su valepotrijati, a prisutne su i slobodne aminokiseline, poput gama-aminobutirične kiseline (GABA). Pripravci valerijane povećavaju razinu GABA neurotransmitera u mozgu, što doprinosi smanjenju nervoze i održavanju normalnog sna. Valepotrijati imaju blago anksiolitičko djelovanje, a pri tomu nemaju svojstvo izazivanja ovisnosti.",
           },
           {
             paragraph: "Dostupan je u pakiranjima od: 50g i 100g.",
@@ -728,7 +731,7 @@ paragraph:
         paragraph: "Alkohol održava tinkturu i znatno produžava rok trajanja, gotovo na neograničeno vrijeme. Za osobe koje ne smiju ili ne žele konzumirati alkohol, svoju dozu tinkture ukapate u vrući čaj ili prelijete vrućom vodom, tako će alkohol u potpunosti ishlapiti, a ostat će svi ljekoviti sastojci.",
       },
 {
-        paragraph: "Tinkture su puno jače i koncentriranije od čaja. samo 2-3 kapi tinkture jednake su, pa čak i jače od cijele jedne šalice čaja. Ljekoviti sastojci tinktura mogu se bolje probaviti i asimilirati nego same sirove biljke, te ulaze u krvotok brzo, gotovo momentalno.",
+        paragraph: "Tinkture su puno jače i koncentriranije od čaja. Samo 2-3 kapi tinkture jednake su, pa čak i jače od cijele jedne šalice čaja. Ljekoviti sastojci tinktura mogu se bolje probaviti i asimilirati nego same sirove biljke, te ulaze u krvotok brzo, gotovo momentalno.",
       },
 {
         paragraph: "Naše tinkture su izrađene sa premium pročišćenim 70% etilnim alkoholom od pažljivo odabranog biljnog materijala najbolje kvalitete. Jako koncentrirane!",
@@ -737,7 +740,7 @@ paragraph:
         paragraph: "Inspiracija za izradu tinktura nam je bila 'Trava Iva' i želja da tu biljku približno svima. Iz našeg dugogodišnjeg iskustva, 'Trava Iva' je jedna od, ako ne i najučinkovitija biljka za razne zdravstvene probleme. Kako je sam čaj od 'Trave Ive' jako gorak i većini nas, a naročito djeci, težak i ponekad nemoguć za piti, došli smo na ideju da napravimo biljnu tinkturu, kako bi u svega par kapljica unijeli šalicu čaja u organizam.",
       },
 {
-        paragraph: "Tinkture su dostupne u pakiranjima: 30, 50 i 100ml",
+        paragraph: "Tinkture su dostupne u pakiranjima: 30, 50 i 100ml.",
       },
       {
 paragraph:
