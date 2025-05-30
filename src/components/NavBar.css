@@ -100,7 +100,7 @@ p {
     margin: 0 auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
 .bar {
     height: 10vh;
     width: 90%;
@@ -114,6 +114,10 @@ p {
 .menuIcon{
     height: 1.8rem;
 }
+.pageTitle {
+        font-size: 2rem;
+    }
+
 
 }
 
@@ -121,6 +125,19 @@ p {
 @media (max-height: 600px) {
     .logoNavBar {
         height: 1.5rem;
+    }
+    .pageTitle {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .logoNavBar {
+        height: 1.5rem;
+    }
+    .pageTitle {
+        font-size: 1.7rem;
     }
 
 }

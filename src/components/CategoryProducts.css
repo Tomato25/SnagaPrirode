@@ -26,6 +26,10 @@
   font-family: 'Baloo Tamma 2', cursive;
   font-size: 3rem;
   grid-area: title;
+        white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .productDescription {
@@ -49,6 +53,7 @@
 }
 
 
+
 @media (max-width: 500px) {
   .productCon {
     flex-direction: column;
@@ -59,15 +64,23 @@
   .productText {
     width: 100%;
     font-size: 0.8rem;
+    margin-bottom: 2rem;
   }
   .productTitle {
-    font-size: 2rem;
+      white-space: nowrap;
+  text-align: center;
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    
   }
 
   .productDescription {
-    text-align: center;
+    text-align: start;
     margin:0 auto;
+    margin-bottom: 1rem;
     font-size: 1rem;
+    width: 80%;
   }
   .productGallery {
     max-width: 100%;
