@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import Logo from "../../assets/images/Logo.png"
 import { NavLink } from "react-router-dom";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import {
   container, item,
   sentence,
@@ -40,8 +40,7 @@ function Home() {
 
   return (
     
-    <motion.div           
-    className="wrapper" >
+    <motion.div className="wrapper">
       <Helmet>
       <title>Snaga Prirode</title>
       <meta name="description" content="OPG Snaga prirode" />
