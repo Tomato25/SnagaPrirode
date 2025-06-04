@@ -1,9 +1,9 @@
 import { React, useState } from "react";
 import "./Accordion.css";
 import { AnimatePresence, motion } from "framer-motion";
-import { container, item } from "../animations/accordionAnimations";
+import { container, item } from "../../animations/accordionAnimations";
 
-function IngredientsAccordion({ingredients, title}) {
+function Accordion(props) {
   const [accordionToggle, setAccordionToggle] = useState(false);
 
   const toggler = () => {
@@ -17,7 +17,7 @@ function IngredientsAccordion({ingredients, title}) {
         <motion.p onClick={toggler} whileHover={{
               scale: 1.05,
             }}
-            whileTap={{ scale: 0.9 }}>{title ? `Sastojci: ${title}` : "Sastojci"}</motion.p>
+            whileTap={{ scale: 0.9 }}>Djeluje kao</motion.p>
         <motion.svg
           onClick={toggler}
           whileHover={{
@@ -48,12 +48,8 @@ function IngredientsAccordion({ingredients, title}) {
             animate="show"
             exit={{ y: -100, opacity: 0 }}
           >
-            {ingredients.map((ingredients, index) => {
-              return (
-                <motion.li key={index} variants={item}>
-                  {ingredients.ingredient}
-                </motion.li>
-              );
+            {props.benefits.map((benefits, index) => {
+              return <motion.li key={index} variants={item}>{benefits.benefit}</motion.li>;
             })}
           </motion.ul>
         </AnimatePresence>
@@ -62,4 +58,4 @@ function IngredientsAccordion({ingredients, title}) {
   );
 }
 
-export default IngredientsAccordion;
+export default Accordion;

@@ -2,15 +2,15 @@ import { React, useEffect, useContext } from "react";
 import "./Products.css";
 import Logo from "../images/Logo.png";
 import { NavLink } from "react-router-dom";
-import productData from "../productsData";
+import productData from "../../assets/productsData";
 import { motion } from "framer-motion";
 import {
   imgAnimitem,
   logoAnim,
   container,
   item,
-} from "../animations/productAnimations";
-import PageContext from "../context/PageContext";
+} from "../../animations/productAnimations";
+import PageContext from "../../context/PageContext";
 import { Helmet } from "react-helmet-async";
 
 

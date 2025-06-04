@@ -2,12 +2,12 @@ import { React } from "react";
 import "./CategoryProducts.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import ProductSplide from "./ProductSplide";
-import Accordion from "./Accordion";
-import IngredientsAccordion from "./IngredientsAccordion";
-import ActsAsAccordion from "./ActsAsAccordion"
+import ProductSplide from "../ProductCarousel/ProductSplide";
+import Accordion from "../Accordion/Accordion";
+import IngredientsAccordion from "../Accordion/IngredientsAccordion";
+import ActsAsAccordion from "../Accordion/ActsAsAccordion"
 import { motion } from "framer-motion";
-import {icon,icon2} from "../animations/homeAnimations"
+import {icon,icon2} from "../../animations/homeAnimations"
 
 function CategoryProducts(props) {
   const productData = props.data;

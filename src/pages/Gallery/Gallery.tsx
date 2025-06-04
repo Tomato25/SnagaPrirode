@@ -2,10 +2,10 @@ import {React,useContext,useEffect} from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./Gallery.css";
 import "@splidejs/react-splide/css";
-import imagesData from "../galleryimages";
+import imagesData from "../../assets/galleryimages";
 import { motion } from "framer-motion";
-import { imgAnimitem } from "../animations/productAnimations";
-import PageContext from "../context/PageContext";
+import { imgAnimitem } from "../../animations/productAnimations";
+import PageContext from "../../context/PageContext";
 import { Helmet } from "react-helmet-async";
 
 function Gallery() {

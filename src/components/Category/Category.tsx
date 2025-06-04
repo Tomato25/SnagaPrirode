@@ -2,7 +2,7 @@ import React from "react";
 import "./Category.css";
 import Logo from "../images/Logo.png";
 import { motion } from "framer-motion";
-import { textAnimCon,logoAnim,imgAnimitem } from "../animations/aboutAnimations";
+import { textAnimCon,logoAnim,imgAnimitem } from "../../animations/aboutAnimations";
 
 
 function Category(props) {

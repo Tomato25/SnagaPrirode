@@ -1,10 +1,10 @@
 import {React, useContext,useEffect} from "react";
-import CategoryProducts from "../components/CategoryProducts";
-import productData from "../productsData";
-import Category from "../components/Category";
+import CategoryProducts from "../../components/CategoryProducts/CategoryProducts";
+import productData from "../../assets/productsData";
+import Category from "../../components/Category/Category";
 import "./Product.css";
 import { useLocation, useParams } from "react-router-dom";
-import PageContext from "../context/PageContext";
+import PageContext from "../../context/PageContext";
 import { Helmet } from "react-helmet-async";
 
 function Product() {

@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   container,
   item,
-} from "../animations/NavBarAnimation";
-import MenuContext from "../context/MenuContext.jsx";
+} from "../../animations/NavBarAnimation";
+import MenuContext from "../../context/MenuContext.jsx";
 import "./NavMenu.css";
 
 function NavMenu() {

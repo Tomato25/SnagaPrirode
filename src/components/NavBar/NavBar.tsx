@@ -3,12 +3,12 @@ import { NavLink, useLocation } from "react-router-dom";
 import "./NavBar.css";
 import "./NavMenu";
 import NavMenu from "./NavMenu";
-import MenuContext from "../context/MenuContext.jsx";
-import ScreenSizeContext from "../context/ScreenSizeContext";
-import PageContext from "../context/PageContext";
+import MenuContext from "../../context/MenuContext.jsx";
+import ScreenSizeContext from "../../context/ScreenSizeContext";
+import PageContext from "../../context/PageContext";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { title, menu, item } from "../animations/NavBarAnimation";
+import { title, menu, item } from "../../animations/NavBarAnimation";
 
 function NavBar() {
   const location = useLocation();

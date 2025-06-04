@@ -2,7 +2,7 @@ import {React, useContext} from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./ProductSplide.css";
 import "@splidejs/react-splide/css";
-import ScreenSizeContext from "../context/ScreenSizeContext";
+import ScreenSizeContext from "../../context/ScreenSizeContext";
 
 
 function ProductSplide(props) {

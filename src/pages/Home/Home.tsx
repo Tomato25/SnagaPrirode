@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Logo from "../images/Logo.png";
+import Logo from "../../assets/images/Logo.png"
 import { NavLink } from "react-router-dom";
 import { motion} from "framer-motion";
 import {
@@ -13,7 +13,7 @@ import {
   imageanime,
   linkanime,
   letters
-} from "../animations/homeAnimations";
+} from "../../animations/homeAnimations";
 import { Helmet } from "react-helmet-async";
 
 function Home() {
@@ -50,12 +50,13 @@ function Home() {
       </Helmet>
       <div className="middleTitle">
         <motion.h1
+          className="title"
           variants={sentence}
           initial="hidden"
           animate="visible"
           viewport={{ once: true }}
           exit={{ x: -4300, opacity: 0, transition:{ duration:0.5 }}}
-          className="title"
+          
         >
           {title.split("").map((char, index) => {
             return (

@@ -1,21 +1,19 @@
-import Home from "./Home";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Gallery from "./Gallery";
-import About from "./About";
-import Contact from "./Contact";
-import Products from "./Products";
-import Product from "./Product";
-import React from "react";
-import NavBar from "../components/NavBar";
+import Home from "../Home/Home";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Gallery from "../Gallery/Gallery";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
+import Products from "../Products/Products";
+import Product from "../Product/Product";
+import NavBar from "../../components/NavBar/NavBar";
 import "./Pages.css";
-import Footer from "../components/Footer";
-import { MenuProvider } from "../context/MenuContext";
-import { ScreenSizeProvider } from "../context/ScreenSizeContext";
+import Footer from "../../components/Footer/Footer";
+import { MenuProvider } from "../../context/MenuContext";
+import { ScreenSizeProvider } from "../../context/ScreenSizeContext";
 import { AnimatePresence } from "framer-motion";
-import { PageProvider } from "../context/PageContext";
-import { Helmet } from "react-helmet-async";
-import Logo from "../images/LogoVector.svg"
-import ScrollToTop from "../ScrollToTop";
+import { PageProvider } from "../../context/PageContext";
+
+import ScrollToTop from "../../utils/ScrollToTop";
 
 function Pages() {
 

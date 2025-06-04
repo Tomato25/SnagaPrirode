@@ -6,8 +6,8 @@ import {
   textAnimCon,
   imgAnimitem,
   logoAnim
-} from "../animations/aboutAnimations";
-import PageContext from "../context/PageContext";
+} from "../../animations/aboutAnimations";
+import PageContext from "../../context/PageContext";
 import { Helmet } from "react-helmet-async";
 
 function About() {
