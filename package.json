@@ -10,9 +10,9 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.15.0",
-    "framer-motion": "^8.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "framer-motion": "^8.5.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-helmet-async": "^1.3.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
@@ -44,6 +44,15 @@
     ]
   },
   "devDependencies": {
-    "react-url-loader": "^0.0.4"
+    "@types/node": "^22.15.29",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@typescript-eslint/eslint-plugin": "^8.33.1",
+    "@typescript-eslint/parser": "^8.33.1",
+    "eslint": "^9.28.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "react-url-loader": "^0.0.4",
+    "typescript": "^4.9.5"
   }
 }

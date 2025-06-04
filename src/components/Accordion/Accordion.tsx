@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./Accordion.css";
 import { AnimatePresence, motion } from "framer-motion";
-import { container, item } from "../animations/accordionAnimations";
+import { container, item } from "../../animations/accordionAnimations";
 
 function Accordion(props) {
   const [accordionToggle, setAccordionToggle] = useState(false);
@@ -17,13 +17,9 @@ function Accordion(props) {
         <motion.p onClick={toggler} whileHover={{
               scale: 1.05,
             }}
-            whileTap={{ scale: 0.9 }}>Djeluje kao</motion.p>
+            whileTap={{ scale: 0.9 }}>Pomaže kod</motion.p>
         <motion.svg
           onClick={toggler}
-          whileHover={{
-            scale: 1.05,
-          }}
-          whileTap={{ scale: 0.9 }}
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-chevron-down"
           width="30"
@@ -34,6 +30,10 @@ function Accordion(props) {
           fill="none"
           stroke-linecap="round"
           stroke-linejoin="round"
+          whileHover={{
+            scale: 1.05,
+          }}
+          whileTap={{ scale: 0.9 }}
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <polyline points="6 9 12 15 18 9" />

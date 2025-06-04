@@ -2,14 +2,14 @@ import {React,useContext,useEffect} from "react";
 import "./Contact.css";
 import Logo from "../images/Logo.png";
 import {motion} from "framer-motion"
-import PageContext from "../context/PageContext";
+import PageContext from "../../context/PageContext";
 import { Helmet } from "react-helmet-async";
 
 import {
   textAnimCon,
   imgAnimitem,
   logoAnim
-} from "../animations/aboutAnimations";
+} from "../../animations/aboutAnimations";
 
 
 function Contact() {
